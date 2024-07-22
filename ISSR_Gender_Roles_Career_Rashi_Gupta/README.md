@@ -5,8 +5,8 @@ Understanding how gender roles and perceptions influence career choices and acad
 
 ## Project Overview
 
-My code and all results can be found on [GitHub](https://github.com/your-repo-link).
-The blog for this can also be found on [Medium]().
+My code and all results can be found on [GitHub](https://github.com/Ras-hi/ISSR/tree/main/ISSR_Gender_Roles_Career_Rashi_Gupta).
+The blog for this can also be found on [Medium](https://rashiguptaofficial.medium.com/gender-roles-careers-exploring-congruity-theories-e49e3b8e4797).
 
 ### 7th Grade: Setting the Stage for Gender Perceptions
 
