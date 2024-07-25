@@ -1,0 +1,11 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+opencv-python==4.8.1.78
+pandas==2.2.2
+numpy==1.26.4
+ultralytics==8.2.49
+torch==1.13.1+cu117
+torchaudio==0.13.1+cu117
+torchvision==0.14.1+cu117
+matplotlib==3.9.1
+shapely==2.0.5
+lapx==0.5.9
