@@ -8,6 +8,7 @@
 - [Installation](#installation)
   - [Running on Google Colab](#running-on-google-colab)
 - [Usage](#usage)
+  - [Safetensors and Hugging Face](#safetensors-and-hugging-face)
 - [Datasets Used](#datasets-used)
 - [Summary of Work Done](#summary-of-work-done)
 - [Results](#results)
@@ -76,8 +77,10 @@ The structure of the repository is as follows:
 │   └───RawData
 ├───Img
 │   ├───Content
+│   ├───Merged
 │   └───Thread
 ├───MergedModelBERT
+│   └───Merged_Models_safetensors
 ├───MLModelsBERT
 │   ├───Content
 │   │   └───SavedModels
@@ -85,7 +88,12 @@ The structure of the repository is as follows:
 │       └───SavedModels
 ├───ShowModelsBaselineBERT
 │   ├───Content
+│   │   └───CSV121Topic
 │   └───Thread
+│       ├───68Topic
+│       │   └───CSV68Topic
+│       └───7Topic
+│           └───CSV7Topic
 ├───ShowResultsHTML
 └───Util
 ```
@@ -132,6 +140,7 @@ Stores tables datasets used in the project.
     Stores images used for topic representation graphics found with BERTopic.
 
     - `Content`: Images related to content analysis.
+    - `Merged`: Images related to merged models analysis.
     - `Thread`: Images related to thread analysis.
 
 4. `MergedModelBERT`
@@ -206,7 +215,14 @@ Note: being quite heavy files (7 GB in total) choose carefully which models and 
     ```bash
     python download_files.py
     ```
-
+6. (Optional) Run the `llama_download.py` script to download the llama quantized model library, which is used for assigning labels. This file is approximately 4.2GB and is not required for running the examples but is necessary for reproducibility of results. 
+    ```bash
+    python llama_download.py
+    ```
+    Note: with Google Colab, just run this:
+      ```bash
+      !wget https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF/resolve/main/openhermes-2.5-mistral-7b.Q4_K_M.gguf
+      ```
 ### Running on Google Colab
 
 To run the notebooks on Google Colab, follow these steps:
@@ -266,7 +282,7 @@ btu.predict_topic(topic_model, sentence, custom_labels=True)
 **Note:** we are using the `topic_model_all-MiniLM-L6-v2_190_20n_8dim`, which is not directly in the directory because it weighs 2.5GB but can be downloaded directly from the file `download_files.py`.
 Alternatively, there is the version `topic_model_all-MiniLM-L6-v2_190_20n_8dim_safetensors` which is much smaller and is present in the directory, but the prediction results are much poorer. <br>
 The BERTopic model used is one example, there are several. Just go to the ModelsContent subdirectory to see how many more there are.<br>
-Or also use the templates in the thread section on Models:
+Or also use the models in the thread section on Models:
 
 ```bash
 cd ../ThreadAnalysis/Models
@@ -335,6 +351,54 @@ Clearly the custom `predict_topic` function is being used, alternatively, one co
 </div>
 
 Note: In the same `.ipynb` file there are other examples
+
+### Safetensors and Hugging Face
+
+If utilising safetensors or Hugging Face (see https://huggingface.co/D0men1c0) models use:
+```python
+from bertopic import BERTopic
+
+# Load the BERTopic model
+topic_model = BERTopic.load("D0men1c0/ISSR_Dark_Web_Merged_Models_Content_Thread")
+
+# Define a sentence for prediction
+sentence = ['recently closed Samsara market']
+
+# Predict
+results, _ = topic_model.transform(sentence)
+
+# Get topic info
+topic_model.get_topic_info(results[0])
+```
+because with safetensors Umap and Hdbscan are not reported, so the prediction must be made on embeddings and not on probabilities.
+
+#### Example Results
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Topic</th>
+      <th>Count</th>
+      <th>Name</th>
+      <th>CustomName</th>
+      <th>Representation</th>
+      <th>Representative_Docs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>113</td>
+      <td>290</td>
+      <td>113_samsara_market_samsara market_sam</td>
+      <td>Samsara Market</td>
+      <td>[samsara, market, samsara market, sam, dream, ...</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ## Datasets Used
 
