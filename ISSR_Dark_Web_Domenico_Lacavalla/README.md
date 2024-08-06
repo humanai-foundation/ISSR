@@ -1,5 +1,9 @@
 # Examination of the Evolution of Language Among Dark Web Users
 
+<div style="text-align: center;">
+    <img src="Img/GSoC@HumanAI.png" alt="GSoC@HumanAI" width="800" height="300"/>
+</div>
+
 ## Table of Contents
 
 - [Project Description](#project-description)
