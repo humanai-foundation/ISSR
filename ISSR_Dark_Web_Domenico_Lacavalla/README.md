@@ -1,5 +1,9 @@
 # Examination of the Evolution of Language Among Dark Web Users
 
+<p align="center">
+    <img src="Img/GSoC@HumanAI.png" alt="GSoC@HumanAI" width="800" height="300"/>
+</p>
+
 ## Table of Contents
 
 - [Project Description](#project-description)
@@ -9,6 +13,7 @@
   - [Running on Google Colab](#running-on-google-colab)
 - [Usage](#usage)
   - [Safetensors and Hugging Face](#safetensors-and-hugging-face)
+- [Summary of the Analysis](#summary-of-the-analysis)
 - [Datasets Used](#datasets-used)
 - [Summary of Work Done](#summary-of-work-done)
 - [Results](#results)
@@ -45,9 +50,11 @@ The structure of the repository is as follows:
 │   │   │   ├───DatasetsContentBERTopic
 │   │   │   ├───LLAMA
 │   │   │   ├───ModelsContent
+│   │   │   │   ├───topic_model_all-MiniLM-L6-v2_150_150n_10dim_white_nation_safetensors
 │   │   │   │   └───topic_model_all-MiniLM-L6-v2_190_20n_8dim_safetensors
 │   │   │   ├───PreProcessFiles
 │   │   │   └───ZeroShotClassificationResultsContent
+│   │   │       ├───all-MiniLM-L6-v2_150_150n_10dim
 │   │   │       └───all-MiniLM-L6-v2_190_20n_8dim
 │   │   └───ThreadAnalysis
 │   │       ├───DatasetsThreadBERTopic
@@ -55,10 +62,12 @@ The structure of the repository is as follows:
 │   │       ├───Models
 │   │       │   ├───topic_model_0.50Sil300_safetensors
 │   │       │   ├───topic_model_0.64SilNew_safetensors
+│   │       │   ├───topic_model_all-MiniLM-L6-v2_150_150n_10dim_raid_safetensors
 │   │       │   ├───topic_model_all-MiniLM-L6-v2_150_20n_safetensors
 │   │       │   ├───topic_model_all-MiniLM-L6-v2_200_safetensors
 │   │       │   └───topic_model_all-MiniLM-L6-v2_400_safetensors
 │   │       ├───OtherFilesPreviousApproach
+│   │       ├───PreProcessFiles
 │   │       ├───ResultsCluster
 │   │       ├───ResultsGridSearchBERTopic
 │   │       └───ZeroShotClassificationResults
@@ -80,7 +89,9 @@ The structure of the repository is as follows:
 │   ├───Merged
 │   └───Thread
 ├───MergedModelBERT
-│   └───Merged_Models_safetensors
+│   ├───Merged_Models_safetensors
+│   ├───Merged_Models_White_Nations_Raid_safetensors
+│   └───Merged_Models_White_Nations_safetensors
 ├───MLModelsBERT
 │   ├───Content
 │   │   └───SavedModels
@@ -88,8 +99,11 @@ The structure of the repository is as follows:
 │       └───SavedModels
 ├───ShowModelsBaselineBERT
 │   ├───Content
-│   │   └───CSV121Topic
+│   │   ├───CSV121Topic
+│   │   └───CSV31TopicWhiteNation
 │   └───Thread
+│       ├───26TopicRaid
+│       │   └───CSV26TopicRaid
 │       ├───68Topic
 │       │   └───CSV68Topic
 │       └───7Topic
@@ -223,6 +237,7 @@ Note: being quite heavy files (7 GB in total) choose carefully which models and 
       ```bash
       !wget https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF/resolve/main/openhermes-2.5-mistral-7b.Q4_K_M.gguf
       ```
+
 ### Running on Google Colab
 
 To run the notebooks on Google Colab, follow these steps:
@@ -248,7 +263,10 @@ To run the notebooks on Google Colab, follow these steps:
 4. Install the necessary libraries. For example:
     ```python
     !pip install bertopic
-    !pip install sentence_transformers
+    !torch
+    !pip install llama_cpp_python
+    !pip install umap_learn
+    !pip install hdbscan
     ```
     
 5. If you encounter the following error while performing DataFrame operations: `Index' object has no attribute '_format_flat'`, note that this is just a visualization issue. The cell will still execute successfully.
@@ -400,18 +418,32 @@ because with safetensors Umap and Hdbscan are not reported, so the prediction mu
 </table>
 </div>
 
+## Summary of the Analysis
+
+I recommend checking the `ShowResultsHTML` folder, which contains HTML files with all the results obtained so far for each baseline, including additional analyses, graphs, and examples of predictions.
+
 ## Datasets Used
 
-The CrimeBB dataset was used, specifically the "dread-2023-06-21" data scraped from Dread, updated on 2023-06-21 (for more details see the Citations section).<br> 
+The CrimeBB and ExtremeBB datasets (for more details, see the Citations section) were used, specifically the following data:
+- **dread-2023-06-21** scraped from Dread, updated on 2023-06-21
+- **extremebb-white-nations 2021-12-10** scraped from White Nations, updated on 2021-12-10
+- **raidforums 2023-06-21** scraped from Raid Forums, updated on 2023-06-21
+
 Dread is a popular forum on the Dark Web where users exchange opinions and reviews on various topics, including drug sales, seller reviews, password and bitcoin transactions, as well as passports and fake IDs.
 
-For more details, here is a tables structure:
+ExtremeBB's "white-nations" dataset covers discussions related to conspiracies, climate change, elections, and racism, reflecting a broad range of socio-political issues.
+
+RaidForums, on the other hand, focuses on leaked and cracked accounts from social media, games, Spotify, and other platforms, highlighting discussions around data breaches and unauthorized access.
+
+For more details, here is a general tables structure:
 
 <img src="Img/structure_tables.png" alt="structure_tables" width="500" height="600"/>
 
-<br>The following tables were analyzed to extract the topics:
-- **Post:** Contains 290k records.
-- **Thread:** Contains 75k records.
+The following tables were analyzed to extract the topics:
+- **Dread Posts:** Contains 290k records.
+- **Dread Threads:** Contains 75k records.
+- **White Nations Posts:** Contains 52k records.
+- **Raid Forums Threads:** Contains 94k records
 
 ## Summary of Work Done
 
@@ -419,7 +451,7 @@ The objective of this project was to analyze the evolution of language among Dar
 
 To gain an overview of the topics discussed, the `thread` field was analyzed first. Various approaches such as TF-IDF, LDA, and Zero-shot classification were used, and a class was developed that combined Sentence Transformer with t-SNE, PCA, and k-means. However, these methods did not yield optimal results.<br> Therefore, the BERTopic library was employed, which, thanks to its modularity, enabled the analysis of text by applying different strategies including Sentence BERT, c-TFIDF, KeyBERTInspired, introducing diversity with custom classes, and using UMAP for dimensionality reduction and HDBSCAN for clustering. Subsequently, Zero-shot classification was applied to the topic names.
 
-This comprehensive approach resulted in two baselines:
+This comprehensive approach resulted in two baselines with Dread forums:
 
 - One with 7 macro clusters (general topics)
 - Another with 68 clusters (aiming to identify as many relevant topics as possible while avoiding micro clusters)
@@ -430,12 +462,17 @@ To further validate the results from an accuracy metrics perspective, a LightGBM
 
 Subsequently, the `content` field in the posts was analyzed to verify if the topics identified matched those in the threads, which they did, resulting in 121 clusters.
 
+To build more robust models, it was decided to analyze two additional datasets with the same structure. 
+The first dataset (**White Nations**) contained 31 topics derived from 52k data points, while the second dataset (**Raid Forums**) included 26 topics from 94k data points. <br>
+The first dataset covered topics such as conspiracies, climate change, elections, and racism, whereas the second dataset focused on leaked and cracked accounts (social media, games, Spotify, etc.).
+
+Finally, to achieve a more robust model, the four baselines found were combined: the one with 68 topics, the one with 121 topics, the one with 31 topics, and the one with 26 topics, resulting in a total of `173` topics (see https://huggingface.co/D0men1c0/ISSR_Dark_Web_Merged_Models_Content_White_Nations_Raid).
 
 ## Results
 
-These are the results of the cluster analysis produced by BERT on both threads and content.<br> For further graphical analysis (distance between clusters, hierarchy, distribution in space), please consult the html directory: `ShowResultsHTM`.
+These are the results of the cluster analysis produced by BERT on both threads and content.<br> For further graphical analysis (distance between clusters, hierarchy, distribution in space), please consult the html directory: `ShowResultsHTML`.
 
-Thread:
+Dread Thread:
 
 | Metric                                  | Value (68 Topics) | Value (7 Topics) |
 |-----------------------------------------|-------------------|------------------|
@@ -445,7 +482,7 @@ Thread:
 | Dos Score (Diversity Overlapped Score)  | 0.06              | 0.80             |
 | Outliers                                | 0.30              | 0.42             |
 
-Content:
+Dread Content:
 
 | Metric                                  | Value (121 Topics)|
 |-----------------------------------------|-------------------|
@@ -455,8 +492,28 @@ Content:
 | Dos Score (Diversity Overlapped Score)  | 0.24              |
 | Outliers                                | 0.35              |
 
+Raid Forums Thread:
 
-There are many other graphs present representing topics and their distribution, for reasons of space only the `Content` graph of the top 10 most frequent topics distributed over time will be shown
+| Metric                                  | Value (26 Topics)|
+|-----------------------------------------|-------------------|
+| Coherence Score                         | 0.51              |
+| Silhouette Score                        | 0.62              |
+| Davies Bouldin Score                    | 0.48              |
+| Dos Score (Diversity Overlapped Score)  | 0.20              |
+| Outliers                                | 0.38              |
+
+White Nations Content:
+
+| Metric                                  | Value (31 Topics)|
+|-----------------------------------------|-------------------|
+| Coherence Score                         | 0.46              |
+| Silhouette Score                        | 0.60              |
+| Davies Bouldin Score                    | 0.55              |
+| Dos Score (Diversity Overlapped Score)  | 0.20              |
+| Outliers                                | 0.32              |
+
+
+There are many other graphs present representing topics and their distribution, for reasons of space only the `Dread Content` graph of the top 10 most frequent topics distributed over time will be shown
 
 <div style="text-align: center;">
   <img src="Img/Content/120TimeSeries.png" alt="Distribution Topic" width="800" height="400"/>
@@ -501,12 +558,14 @@ Content:
 
 ## Future work
 
-- [ ] **Merge Baselines**: The next steps involve merging the baselines obtained from the Thread and Content sections into a single model to integrate both representations, with Thread providing general topics and Content extending them.
+- [X] **Merge Baselines**: The next steps involve merging the baselines obtained from the Thread and Content sections into a single model to integrate both representations, with Thread providing general topics and Content extending them.
 - [X] **Validation**: Validate the results using clustering metrics and machine learning models. Given the data volume, LightGBM may not be sufficient, so exploring neural networks could be beneficial.
-- [ ] **Topic Refinement**: Conduct a final review of the topics, potentially integrating specific expressions that need to be highlighted (e.g., a particular abbreviation for a drug that wasn't identified).
-- [ ] **Integration with LLAMA2**: Incorporate LLAMA2 to better explain and refine the topic labels. LLAMA2 can provide more detailed and contextually relevant labels, enhancing the interpretability of the topics.
-- [ ] **Deployment on HuggingFace**: Push both the "general" model with 7 topics and the more specific model resulting from merging the Thread and Content sub-models to HuggingFace.
-- [ ] **Temporal Validation**: If time permits, validate the results over time using LSTM (currently done with BERT) to ensure temporal consistency and gain additional insights.
+- [X] **Topic Refinement**: Conduct a final review of the topics, potentially integrating specific expressions that need to be highlighted (e.g., a particular abbreviation for a drug that wasn't identified).
+- [X] **Integration with GenAI**: Incorporate Generative AI to better explain and refine the topic labels. Mistral can provide more detailed and contextually relevant labels, enhancing the interpretability of the topics.
+- [X] **Deployment on HuggingFace**: Push both the "general" model with 7 topics and the more specific model resulting from merging the Thread and Content sub-models to HuggingFace.
+- [X] **Temporal Validation**: If time permits, validate the results over time using LSTM (currently done with BERT) to ensure temporal consistency and gain additional insights.
+- [X] **Dataset Integration**: Explore the integration of additional datasets to make the merged model more robust and comprehensive. This would involve aligning different datasets to ensure consistency and leveraging diverse data sources to cover more topics and nuances.
+- [ ] **Sentiment Analysis**: Implement sentiment analysis on processed documents to evaluate the prevailing sentiment within each cluster, providing deeper insights into the emotional tone and audience perceptions related to specific topics.
 - [ ] **Multimodal Model**: Finally, consider making the model multimodal by incorporating both text and images. This would require more in-depth development.
 
 

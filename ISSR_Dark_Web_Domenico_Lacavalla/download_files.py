@@ -66,19 +66,34 @@ files_to_download = [
         "file_size": "2.5 GB"
     },
     {
-        "file_id": "1M-f-T7URHM457bpbP5sX0qjPUf9ve4ON",
-        "destination": f"{PATH_THREAD}/topic_model_0.64SilNew",
-        "file_size": "560 MB"
+        "file_id": "1Iyt69eUigfRe984NKPtNGMH9rcsKUlYs",
+        "destination": f"{PATH_CONTENT}/ModelsContent/topic_model_all-MiniLM-L6-v2_150_150n_10dim_white_nation",
+        "file_size": "670 MB"
     },
     {
-        "file_id": "1otWPdqFcoXIcQDfm0_ozGDtyHvMuhsxu",
-        "destination": f"{PATH_THREAD}/topic_model_0.50Sil300",
+        "file_id": "1M-f-T7URHM457bpbP5sX0qjPUf9ve4ON",
+        "destination": f"{PATH_THREAD}/topic_model_0.64SilNew",
         "file_size": "560 MB"
     },
     {
         "file_id": "1laGx-5mp29QNs58EtbThbqepNneiPc1r",
         "destination": f"{PATH_THREAD}/topic_model_all-MiniLM-L6-v2_150_20n",
         "file_size": "550 MB"
+    },
+    {
+        "file_id": "1PmuE6dS0yORKBeePAA4SXQ2y3p3xKPDP",
+        "destination": f"{PATH_THREAD}/topic_model_all-MiniLM-L6-v2_500_150n_10dim_raid",
+        "file_size": "1.1 GB"
+    },
+    {
+        "file_id": "1WfGggs_oHpKRf9hJF6tvLjLdKI8A20WG",
+        "destination": 'Analyze_files/CombiningAnalysisCompleteDataset/ThreadAnalysis/PreProcessFiles/threads_preprocessed_embeddings_raids.npz',
+        "file_size": "130 MB"
+    },
+    {
+        "file_id": "1otWPdqFcoXIcQDfm0_ozGDtyHvMuhsxu",
+        "destination": f"{PATH_THREAD}/topic_model_0.50Sil300",
+        "file_size": "560 MB"
     },
     {
         "file_id": "1MoWnRbJUE49DgdvcmMzQNKz_zwylqQXj",
@@ -93,16 +108,11 @@ files_to_download = [
 ]
 
 
-
-for file in files_to_download:
-    file["destination"] = add_copy_suffix(file["destination"])
-
-
 # Download each file listed in files_to_download
 for file in tqdm(files_to_download, desc="Downloading files"):
     while True:
         file_name = os.path.basename(file['destination'])
-        should_download = input(f"\nDo you want to download the file {file_name} ({file['file_size']})? (yes/no or y/n): ").strip().lower()
+        should_download = input(f"/nDo you want to download the file {file_name} ({file['file_size']})? (yes/no or y/n): ").strip().lower()
         
         if should_download in ['yes', 'y']:
             # Create the directory structure if it doesn't exist
