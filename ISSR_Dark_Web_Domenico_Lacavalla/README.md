@@ -170,7 +170,6 @@ Contains script merged BERT models.
     - `Thread`: Thread-related models.
 
 7. `ShowResultsHTML`
-Contains HTML files showing results of the analysis.
 
 8. `Util`
 Utility scripts and auxiliary functions used throughout the project to process data and evaluate models.<br>
