@@ -109,6 +109,8 @@ The structure of the repository is as follows:
 │       └───7Topic
 │           └───CSV7Topic
 ├───ShowResultsHTML
+│   ├───ReproducibilityResults
+│   └───ShowFinalAnalysisBaselines
 └───Util
 ```
 
@@ -170,6 +172,7 @@ Contains script merged BERT models.
     - `Thread`: Thread-related models.
 
 7. `ShowResultsHTML`
+Contains HTML files showing the results of the final analysis and the reproducibility of the results.
 
 8. `Util`
 Utility scripts and auxiliary functions used throughout the project to process data and evaluate models.<br>
@@ -236,7 +239,6 @@ Note: being quite heavy files (7 GB in total) choose carefully which models and 
       ```bash
       !wget https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF/resolve/main/openhermes-2.5-mistral-7b.Q4_K_M.gguf
       ```
-
 ### Running on Google Colab
 
 To run the notebooks on Google Colab, follow these steps:
@@ -419,7 +421,7 @@ because with safetensors Umap and Hdbscan are not reported, so the prediction mu
 
 ## Summary of the Analysis
 
-I recommend checking the `ShowResultsHTML` folder, which contains HTML files with all the results obtained so far for each baseline, including additional analyses, graphs, and examples of predictions.
+I recommend checking the `ShowResultsHTML/ShowFinalAnalysisBaselines` directory, which contains HTML files with all the results obtained so far for each baseline, including additional analyses, graphs, and examples of predictions.
 
 ## Datasets Used
 
@@ -564,7 +566,7 @@ Content:
 - [X] **Deployment on HuggingFace**: Push both the "general" model with 7 topics and the more specific model resulting from merging the Thread and Content sub-models to HuggingFace.
 - [X] **Temporal Validation**: If time permits, validate the results over time using LSTM (currently done with BERT) to ensure temporal consistency and gain additional insights.
 - [X] **Dataset Integration**: Explore the integration of additional datasets to make the merged model more robust and comprehensive. This would involve aligning different datasets to ensure consistency and leveraging diverse data sources to cover more topics and nuances.
-- [ ] **Sentiment Analysis**: Implement sentiment analysis on processed documents to evaluate the prevailing sentiment within each cluster, providing deeper insights into the emotional tone and audience perceptions related to specific topics.
+- [X] **Sentiment Analysis**: Implement sentiment analysis on processed documents to evaluate the prevailing sentiment within each cluster, providing deeper insights into the emotional tone and audience perceptions related to specific topics.
 - [ ] **Multimodal Model**: Finally, consider making the model multimodal by incorporating both text and images. This would require more in-depth development.
 
 
