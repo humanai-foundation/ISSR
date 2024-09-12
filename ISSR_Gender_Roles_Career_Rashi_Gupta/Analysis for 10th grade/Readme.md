@@ -1,8 +1,28 @@
 # 10th Grade Educational Survey Data Analysis
 
-## Overview
+## Repository Structure
 
-This project analyzes educational survey data from 10th grade to understand how students' perceptions and choices impact their future educational and career decisions. The analysis includes data preprocessing, model training, evaluation, and visualization.
+```bash
+ISSR_Gender_Roles_Rashi_Gupta/
+│
+├── Analysis for 10th_grade/
+│   ├── Readme.md              # Key components and process description
+|   |── Detailed Report for Grade 10th _ Predicting College Major Choices.pdf           # contains the documentation 
+|   |
+│   ├── images/                # Visual representations (ROC Curves, etc.)
+│   │   ├── roc_curve_fall.png
+│   │   ├── roc_curve_spring.png
+│   │   ├── confusion_fall.png
+│   │   ├── confusion_spring.png
+│   │   └── architecture_diagram.png
+|   |
+│   └── 10th-grade2.ipynb/
+│       ├── data_preprocessing      # SMOTE, resampling, and other preprocessing techniques
+│       ├── model_training         # RandomForestClassifier and GridSearchCV
+│       ├── evaluation_metrics     # Precision, Recall, F1-Score, Accuracy, and ROC Curves
+│       └── cross_validation       # Cross-validation and data splitting
+
+```
 
 ## Key Components
 
@@ -24,15 +44,21 @@ This project analyzes educational survey data from 10th grade to understand how 
 
 The ROC curves illustrate the performance of the model across different classes. The area under the curve (AUC) indicates the model's ability to distinguish between classes.
 
-![ROC Curve - Fall Semester](https://www.example.com/roc_curve_fall.png)
-![ROC Curve - Spring Semester](https://www.example.com/roc_curve_spring.png)
+![ROC Curve - Fall Semester](./images/roc_curve_fall.png)
+![ROC Curve - Spring Semester](./images/roc_curve_spring.png)
 
 #### Confusion Matrices
 
 Confusion matrices provide insights into the number of true positive, true negative, false positive, and false negative predictions.
 
-![Confusion Matrix - Fall Semester](https://www.example.com/confusion_matrix_fall.png)
-![Confusion Matrix - Spring Semester](https://www.example.com/confusion_matrix_spring.png)
+![Confusion Matrix - Fall Semester](./images/confusion_fall.png)
+![Confusion Matrix - Spring Semester](./images/confusion_spring.png)
+
+#### Feature Importance
+
+
+![Feature Importance - Fall Semester](./images/feature_fall.png)
+![Feature Importance - Spring Semester](./images/feature_spring.png)
 
 ## Architecture Diagrams
 
@@ -48,13 +74,7 @@ This diagram details the model architecture, including feature selection, model 
 
 ![Model Architecture Diagram](https://www.example.com/model_architecture.png)
 
-## Usage
 
-To replicate or build upon this analysis, follow these steps:
-
-1. **Data Preparation**: Ensure data is preprocessed, including handling missing values and encoding categorical variables.
-2. **Model Training**: Use Grid Search to find the best hyperparameters and train the model with balanced data.
-3. **Evaluation**: Assess model performance using metrics like precision, recall, F1-score, and visualize results with ROC curves and confusion matrices.
 
 
 
