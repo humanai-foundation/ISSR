@@ -8,6 +8,51 @@ Understanding how gender roles and perceptions influence career choices and acad
 My code and all results can be found on [GitHub](https://github.com/Ras-hi/ISSR/tree/main/ISSR_Gender_Roles_Career_Rashi_Gupta).
 The blog for this can also be found on [Medium](https://rashiguptaofficial.medium.com/gender-roles-careers-exploring-congruity-theories-e49e3b8e4797).
 
+## Overall Repository Structure
+
+```bash
+ISSR_Gender_Roles_Rashi_Gupta/
+│
+├── 7th_grade/
+│   ├── analysis_7th_grade.md
+│   └── images/
+│       └── (Images specific to 7th grade)
+│
+├── 8th_grade/
+│   ├── analysis_8th_grade.md
+│   └── images/
+│       └── (Images specific to 8th grade)
+│
+├── 9th_grade/
+│   ├── analysis_9th_grade.md
+│   └── images/
+│       └── (Images specific to 9th grade)
+│
+├── 10th_grade/
+│   ├── README.md              # Key components and process description
+│   ├── images/                # Visual representations (ROC Curves, etc.)
+│   │   ├── roc_curve_fall.png
+│   │   ├── roc_curve_spring.png
+│   │   ├── confusion_matrix_fall.png
+│   │   ├── confusion_matrix_spring.png
+│   │   └── architecture_diagram.png
+│   └── model/
+│       ├── data_preprocessing.py      # SMOTE, resampling, and other preprocessing techniques
+│       ├── model_training.py          # RandomForestClassifier and GridSearchCV
+│       ├── evaluation_metrics.py      # Precision, Recall, F1-Score, Accuracy, and ROC Curves
+│       └── cross_validation.py        # Cross-validation and data splitting
+│
+├── 11th_grade/
+│   ├── analysis_11th_grade.md
+│   └── images/
+│       └── (Images specific to 11th grade)
+│
+└── 12th_grade/
+    ├── analysis_12th_grade.md
+    └── images/
+        └── (Images specific to 12th grade)
+```
+
 ### 7th Grade: Setting the Stage for Gender Perceptions
 
 #### Key Insights:
