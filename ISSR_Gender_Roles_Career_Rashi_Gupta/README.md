@@ -145,7 +145,9 @@ The journey from 7th to 9th grade is a critical period for shaping students' per
 - **Role of Enjoyment and Performance**: Enjoyment and academic performance continue to be strong predictors of career choices. However, the influence of societal and parental expectations is more visible at this stage, with students making more conscious career-related decisions based on perceived societal norms.
 - **Predictive Models**: Models like Random Forest and XGBoost further highlight how gender plays a role in career outcomes, with boys predominantly predicted to choose STEM fields, while girls lean towards humanities and education.
 
-![11th grade ROC Curve](./images/11th_fall_roc_curve.png)
+![11th grade ROC Curve](./Analysis%20for%2011th%20grade/images/roc_fall.png)
+![11th grade Success in Life Importance](./Analysis%20for%2011th%20grade/images/success_life.png)
+![11th grade Interest by Subjects](./Analysis%20for%2011th%20grade/images/interest_subjects.png)
 
 ### Recommendations:
 - **For Educators**: Encourage girls to stay engaged with STEM subjects through advanced coursework, internships, and mentorship programs. Boys should also be encouraged to explore non-STEM fields such as the arts and humanities.
@@ -160,7 +162,7 @@ The journey from 7th to 9th grade is a critical period for shaping students' per
 - **Impact of Gender Perceptions**: Even though gender perceptions have evolved since the early grades, societal pressures and deeply ingrained stereotypes still influence career aspirations. Boys tend to believe that they are more suited for Math and Science, while girls tend to focus on nurturing careers.
 - **Teacher Clarity and Career Decisions**: Students who perceive their teachers as clear and supportive in STEM subjects are more likely to choose STEM careers, though this is stronger for boys than for girls.
 
-![12th grade ROC Curve](./images/12th_fall_roc_curve.png)
+![12th grade Importance of Success in work by major](./Analysis%20for%2012th%20grade/images/success_bymajor.png)
 
 ### Recommendations:
 - **For Educators**: Highlight successful professionals in STEM from diverse genders to inspire students. Encourage all students to explore their full potential in any field they are passionate about.
