@@ -13,44 +13,65 @@ The blog for this can also be found on [Medium](https://rashiguptaofficial.mediu
 ```bash
 ISSR_Gender_Roles_Rashi_Gupta/
 │
-├── 7th_grade/
-│   ├── analysis_7th_grade.md
+├── Analysis for 7th grade/
+│   ├── 7th_grade_analysis.ipynb
+│   ├── 7th_grade_analysis.pdf
 │   └── images/
-│       └── (Images specific to 7th grade)
+│       
+│      
 │
-├── 8th_grade/
-│   ├── analysis_8th_grade.md
+├── Analysis for 8th grade/
+│   ├── 8th_grade_analysis.ipynb
+│   ├── 8th_grade_analysis.pdf
 │   └── images/
-│       └── (Images specific to 8th grade)
+│     
+│      
 │
-├── 9th_grade/
-│   ├── analysis_9th_grade.md
+├── Analysis for 9th grade/
+│   ├── 9th_grade_analysis.ipynb
+│   ├── 9th_grade_analysis.pdf
 │   └── images/
-│       └── (Images specific to 9th grade)
+│      
+│       
 │
-├── 10th_grade/
-│   ├── README.md              # Key components and process description
-│   ├── images/                # Visual representations (ROC Curves, etc.)
-│   │   ├── roc_curve_fall.png
-│   │   ├── roc_curve_spring.png
-│   │   ├── confusion_matrix_fall.png
-│   │   ├── confusion_matrix_spring.png
-│   │   └── architecture_diagram.png
-│   └── model/
-│       ├── data_preprocessing.py      # SMOTE, resampling, and other preprocessing techniques
-│       ├── model_training.py          # RandomForestClassifier and GridSearchCV
-│       ├── evaluation_metrics.py      # Precision, Recall, F1-Score, Accuracy, and ROC Curves
-│       └── cross_validation.py        # Cross-validation and data splitting
-│
-├── 11th_grade/
-│   ├── analysis_11th_grade.md
+├── Analysis for 10th grade/
+│   ├── 10th_grade_analysis.ipynb
+│   ├── 10th_grade_analysis.pdf
+│   ├── README.md
 │   └── images/
-│       └── (Images specific to 11th grade)
+│       ├── 10th_fall_roc_curve.png
+│       ├── 10th_spring_roc_curve.png
+│       └── 10th_feature_importance.png
 │
-└── 12th_grade/
-    ├── analysis_12th_grade.md
-    └── images/
-        └── (Images specific to 12th grade)
+├── Analysis for 11th grade/
+│   ├── 11th_grade_analysis.ipynb
+│   ├── 11th_grade_analysis.pdf
+│   ├── README.md
+│   └── images/
+│       ├── 11th_fall_roc_curve.png
+│       ├── 11th_spring_roc_curve.png
+│       └── 11th_feature_importance.png
+│
+├── Analysis for 12th grade/
+│   ├── 12th_grade_analysis.ipynb
+│   ├── 12th_grade_analysis.pdf
+│   ├── README.md
+│   └── images/
+│       ├── 12th_fall_roc_curve.png
+│       ├── 12th_spring_roc_curve.png
+│       └── 12th_feature_importance.png
+│
+├── images/
+│   ├── gender_distribution.png
+│   └── subject_interest_trends.png
+│
+├── Project_Report/
+│   ├── Midterm_Evaluation_PPT.pptx
+│   ├── Final_Term_Evaluation_PPT.pptx
+│
+├── README.md
+└── Project_Report.pdf
+
 ```
 
 ### 7th Grade: Setting the Stage for Gender Perceptions
@@ -99,6 +120,60 @@ The plot compares how much 9th-grade students like STEM subjects (like math and 
 ## Conclusion: Challenging Gender Congruity Theories
 
 The journey from 7th to 9th grade is a critical period for shaping students' perceptions of gender roles and career aspirations. By understanding and addressing these influences, educators and parents can help dismantle traditional gender stereotypes and support all students in achieving their full potential. Early intervention and continuous support can significantly impact students' long-term satisfaction and success, paving the way for a more equitable and diverse future workforce.
+
+
+## 10th Grade: Deepening Gender Gaps in Academic Choices
+
+### Key Insights:
+- **Subject Preferences and Gender Roles**: By 10th grade, students’ subject preferences and perceived teacher clarity in STEM and non-STEM subjects show more pronounced gender divides. Boys show a higher preference for Math and Science, while girls continue to show more interest in English and Social Studies.
+- **Occupational Expectations**: Students' career expectations are becoming more solidified, with boys leaning toward engineering and technology fields, while girls lean toward education, healthcare, and social sciences. This reflects societal gender norms around career choices.
+- **Influence of Teacher Perceptions**: Students’ views of teacher clarity in subjects like Math and Science significantly correlate with their interest in pursuing STEM-related college majors. However, gender continues to influence these perceptions, reinforcing traditional stereotypes.
+
+![10th grade ROC Curve](./Analysis%20for%2010th%20grade/images/roc_curve_fall.png)
+![10th grade Feature Importance](./Analysis%20for%2010th%20grade/images/feature_spring.png)
+
+### Recommendations:
+- **For Educators**: Facilitate discussions about gender stereotypes in career paths, emphasizing that both boys and girls can excel in STEM and non-STEM fields. Teachers should ensure they present a gender-neutral approach in classrooms.
+- **For Parents**: Reinforce the importance of both STEM and humanities fields for both genders. Encourage exploration and open conversations about non-traditional career paths for boys and girls alike.
+
+---
+
+## 11th Grade: Crystallizing Gendered Career Aspirations
+
+### Key Insights:
+- **STEM vs Non-STEM Divergence**: Boys' interest in STEM subjects, particularly Math and Science, continues to outpace girls’ interest, while girls show strong preferences for humanities and social sciences. The gap between STEM and non-STEM subject preferences is becoming more entrenched.
+- **Role of Enjoyment and Performance**: Enjoyment and academic performance continue to be strong predictors of career choices. However, the influence of societal and parental expectations is more visible at this stage, with students making more conscious career-related decisions based on perceived societal norms.
+- **Predictive Models**: Models like Random Forest and XGBoost further highlight how gender plays a role in career outcomes, with boys predominantly predicted to choose STEM fields, while girls lean towards humanities and education.
+
+![11th grade ROC Curve](./images/11th_fall_roc_curve.png)
+
+### Recommendations:
+- **For Educators**: Encourage girls to stay engaged with STEM subjects through advanced coursework, internships, and mentorship programs. Boys should also be encouraged to explore non-STEM fields such as the arts and humanities.
+- **For Parents**: Support your child’s interests across all fields, regardless of societal expectations. Let them explore STEM or humanities based on their passion and skill, not their gender.
+
+---
+
+## 12th Grade: Finalizing Career Paths and Gendered College Majors
+
+### Key Insights:
+- **STEM Major Selection**: As students approach college, those who perform well and enjoy Math and Science are more likely to choose STEM majors. Gender continues to influence major selection, with more boys choosing engineering and technology, while girls lean towards fields like healthcare, education, and social sciences.
+- **Impact of Gender Perceptions**: Even though gender perceptions have evolved since the early grades, societal pressures and deeply ingrained stereotypes still influence career aspirations. Boys tend to believe that they are more suited for Math and Science, while girls tend to focus on nurturing careers.
+- **Teacher Clarity and Career Decisions**: Students who perceive their teachers as clear and supportive in STEM subjects are more likely to choose STEM careers, though this is stronger for boys than for girls.
+
+![12th grade ROC Curve](./images/12th_fall_roc_curve.png)
+
+### Recommendations:
+- **For Educators**: Highlight successful professionals in STEM from diverse genders to inspire students. Encourage all students to explore their full potential in any field they are passionate about.
+- **For Parents**: Continue to provide balanced support and encouragement. Challenge traditional gender roles by encouraging both girls and boys to consider all career paths.
+
+---
+
+## Conclusion: Navigating Gendered Perceptions in the Final Years
+
+From 10th to 12th grade, students' academic choices and career aspirations become deeply influenced by both internal motivations and external societal pressures. While academic performance and subject enjoyment play a significant role, gender still affects major decisions, often reinforcing traditional career paths.
+
+By fostering an environment that challenges stereotypes and supports a broad range of interests, educators and parents can help bridge the gender gap in both STEM and non-STEM fields. Continued efforts to provide balanced mentorship, career counseling, and academic support will ensure that both boys and girls are empowered to pursue their true passions, free from the constraints of gendered expectations.
+
 
 ## Acknowledgement
 
