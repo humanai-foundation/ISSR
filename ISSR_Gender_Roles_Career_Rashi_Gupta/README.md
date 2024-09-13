@@ -7,7 +7,7 @@ Understanding how gender roles and perceptions influence career choices and acad
 
 My code and all results can be found on [GitHub](https://github.com/Ras-hi/ISSR/tree/main/ISSR_Gender_Roles_Career_Rashi_Gupta).
 The updated blog can be found on [Medium](https://rashiguptaofficial.medium.com/exploring-gender-roles-in-education-a-grade-wise-analysis-cb87db14bc7d#3e03).
-The blog for this can also be found on [Medium](https://rashiguptaofficial.medium.com/gender-roles-careers-exploring-congruity-theories-e49e3b8e4797).
+The previous blog for this can also be found on [Medium](https://rashiguptaofficial.medium.com/gender-roles-careers-exploring-congruity-theories-e49e3b8e4797).
 
 ## Overall Repository Structure
 
