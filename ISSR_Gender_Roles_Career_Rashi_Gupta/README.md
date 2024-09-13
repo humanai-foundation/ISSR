@@ -180,4 +180,4 @@ By fostering an environment that challenges stereotypes and supports a broad ran
 
 ## Acknowledgement
 
-This project is supported by the Google Summer of Code program and HumanAI. Firstly, I want to thank my mentors, Joan Barth and Erika Steele, who guided me through the whole project. Secondly, I want to thank Dr. Sergie Gleyzer and Andrea Underhill, who provided super helpful suggestions for the project review.
+This project is supported by the [Google Summer of Code](https://summerofcode.withgoogle.com/) program and [HumanAI](https://humanai.foundation/). Firstly, I want to thank my mentors, Joan Barth and Erika Steele, who guided me through the whole project. Secondly, I want to thank Dr. Sergie Gleyzer and Andrea Underhill, who provided super helpful suggestions for the project review.
