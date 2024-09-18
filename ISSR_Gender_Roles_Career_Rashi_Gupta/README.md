@@ -152,7 +152,7 @@ The journey from 7th to 9th grade is a critical period for shaping students' per
 ---
 
 ## 11th Grade: Crystallizing Gendered Career Aspirations
-[Further Details](https://github.com/Ras-hi/ISSR/blob/main/ISSR_Gender_Roles_Career_Rashi_Gupta/Analysis%20for%2011th%20grade/Readme.md)
+[Further Details](https://github.com/Ras-hi/ISSR/tree/main/ISSR_Gender_Roles_Career_Rashi_Gupta/Analysis%20for%2011th%20grade/images)
 ### Key Insights:
 - **STEM vs Non-STEM Divergence**: Boys' interest in STEM subjects, particularly Math and Science, continues to outpace girls’ interest, while girls show strong preferences for humanities and social sciences. The gap between STEM and non-STEM subject preferences is becoming more entrenched.
 - **Role of Enjoyment and Performance**: Enjoyment and academic performance continue to be strong predictors of career choices. However, the influence of societal and parental expectations is more visible at this stage, with students making more conscious career-related decisions based on perceived societal norms.
@@ -169,7 +169,7 @@ The journey from 7th to 9th grade is a critical period for shaping students' per
 ---
 
 ## 12th Grade: Finalizing Career Paths and Gendered College Majors
-[Further Details](https://github.com/Ras-hi/ISSR/blob/main/ISSR_Gender_Roles_Career_Rashi_Gupta/Analysis%20for%2012th%20grade/Readme.md)
+[Further Details](https://github.com/Ras-hi/ISSR/tree/main/ISSR_Gender_Roles_Career_Rashi_Gupta/Analysis%20for%2012th%20grade/images)
 ### Key Insights:
 - **STEM Major Selection**: As students approach college, those who perform well and enjoy Math and Science are more likely to choose STEM majors. Gender continues to influence major selection, with more boys choosing engineering and technology, while girls lean towards fields like healthcare, education, and social sciences.
 - **Impact of Gender Perceptions**: Even though gender perceptions have evolved since the early grades, societal pressures and deeply ingrained stereotypes still influence career aspirations. Boys tend to believe that they are more suited for Math and Science, while girls tend to focus on nurturing careers.
