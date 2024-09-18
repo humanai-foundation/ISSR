@@ -74,6 +74,18 @@ ISSR_Gender_Roles_Rashi_Gupta/
 └── Project_Report.pdf
 
 ```
+## DATA OVERVIEW 
+
+![Data Overview ](images/Picture1.png)
+<p align="center"><em>Figure 1: Cohort Timeline and Representation </em></p>
+
+![Data Overview ](images/Picture2.png)
+<p align="center"><em>Figure 1: Variables or Features Di-section </em></p>
+
+
+## Gender Perceptions
+![Flowchart ](images/gender_perceptions_flowchart.png)
+<p align="center"><em>Figure 1: Grade wise gender perceptions  </em></p>
 
 ### 7th Grade: Setting the Stage for Gender Perceptions
 
