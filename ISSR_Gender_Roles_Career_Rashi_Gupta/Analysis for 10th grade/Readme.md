@@ -60,19 +60,6 @@ Confusion matrices provide insights into the number of true positive, true negat
 ![Feature Importance - Fall Semester](./images/feature_fall.png)
 ![Feature Importance - Spring Semester](./images/feature_spring.png)
 
-## Architecture Diagrams
-
-### Overall Architecture
-
-This diagram outlines the overall workflow of the project, from data collection to model evaluation.
-
-![Overall Architecture Diagram](https://www.example.com/overall_architecture.png)
-
-### Model Architecture
-
-This diagram details the model architecture, including feature selection, model training, and evaluation processes.
-
-![Model Architecture Diagram](https://www.example.com/model_architecture.png)
 
 
 
