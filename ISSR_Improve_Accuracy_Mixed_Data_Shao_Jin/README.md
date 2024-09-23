@@ -1,5 +1,4 @@
 # Enhancing Program Evaluation Research by Leveraging AI for Integrated Analysis of Mixed-Methods Data
-![gsoc24](images/coll.png)
 
 The primary objective of this project is to utilize AI and machine learning to improve the analysis of mixed-methods research involving surveys and focus group designs for program evaluation. By leveraging advanced technologies, we seek to gain a more comprehensive understanding of the data, extract meaningful insights, and enhance the efficiency of analysis processes.
 
@@ -22,6 +21,15 @@ To use the code provided in this repository, please follow the steps below:
 
 By following these steps, you'll be able to successfully run the code and generate your own outputs based on the input files you provide.
 
+# My Work
+
+1. I reverse-engineered the 2016 Alabama Youth Tobacco Survey to understand its sampling and weighting processes and applied these techniques to the 2024 Alabama student input data. [Code link](https://github.com/koswjjnd/ISSR/blob/main/ISSR_Improve_Accuracy_Mixed_Data_Shao_Jin/sample_weight_2024_data.ipynb)
+
+2. I employed various machine learning models to predict the outcomes of the 2024 Alabama Youth Tobacco Survey, achieving a classification accuracy of 0.808 and an average regression score of 0.71 on the test dataset. [Classification](https://github.com/koswjjnd/ISSR/blob/main/ISSR_Improve_Accuracy_Mixed_Data_Shao_Jin/classification_model.ipynb)[Regression](https://github.com/koswjjnd/ISSR/blob/main/ISSR_Improve_Accuracy_Mixed_Data_Shao_Jin/Regression_model.ipynb)
+
+3. I identified a growing tendency for smoking among Black and two-race youths over the years. To investigate further, I analyzed the survey answer data, which revealed specific trends: a growing number of two-race male youths have shown a tendency to start smoking cigarettes and cigars at 9 years old or younger, while a similar trend is seen among Black female youths. Additionally, I observed that a growing proportion of two-race and Black youths are less likely to quit smoking over time.[Code link](https://github.com/koswjjnd/ISSR/blob/main/ISSR_Improve_Accuracy_Mixed_Data_Shao_Jin/2024_data_output_analysis.ipynb)
+
+4. I also designed a qualitative question regarding tobacco usage and generated synthesized responses to demonstrate the potential of machine learning in coding, analyzing, and summarizing large-scale open-ended feedback. To make this process interactive, I developed an [interactive website](https://huggingface.co/spaces/Shao11111/qualitative) where users can submit their own answers, and the model predicts the category their response belongs to.[Code link](https://github.com/koswjjnd/ISSR/blob/main/ISSR_Improve_Accuracy_Mixed_Data_Shao_Jin/qualitative_2024.ipynb)
 
 
 ## Acknowledgement
