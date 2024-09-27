@@ -13,5 +13,11 @@ Run clip zero_clip_video.py to get the zero shot results for running CLIP ViT-L/
 pip install -r requirements.txt
 ```
 2. Install the required packages from the [SPIGA](https://github.com/andresprados/SPIGA) and [CLIP](https://github.com/openai/CLIP) github repositories.
+
+## Instructions for training
+1. Use CLIP model on the videos of the DMD dataset to extract the frames for distracted driving behaviour (clip_df_test.py). Then use a yolo model to get the bounding box of the person for the frame.
+2. Create a dataset in this manner and train a yolo model (best.pt) on the obtained dataset.
+3. Run combined_test.py with the model obtained in previous steps.
+
 ## Results
-Final Results will be released by the final evaluation period. You can find out more about the project on my [blog](https://medium.com/@aditya.arvind97/fatigue-detection-and-driver-state-monitoring-48c75eb0eeff).
+You can find out more about the project on my [blog](https://medium.com/@aditya.arvind97/fatigue-detection-and-driver-distraction-monitoring-b895a5ee287c).
