@@ -9,3 +9,4 @@ torchvision==0.14.1+cu117
 matplotlib==3.9.1
 shapely==2.0.5
 lapx==0.5.9
+mediapipe==0.10.14 
