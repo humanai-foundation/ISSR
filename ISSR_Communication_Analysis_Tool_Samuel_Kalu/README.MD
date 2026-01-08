@@ -7,6 +7,8 @@ This repository contains a web application for TRIP-LAB that analyzes communicat
 
 ## Overview
 
+This project analyzes communication text to extract insights such as sentiment, emotion, and linguistic patterns using NLP techniques.
+
 The project consists of two main components:
 1. A video/audio processing pipeline that extracts audio, performs speaker segmentation, transcribes speech, and analyzes sentiment and tone.
 2. A Gradio-based visualization interface that displays analysis results through interactive plots and CSV outputs.
@@ -24,11 +26,28 @@ The project consists of two main components:
 
 ## Installation
 
-1. Clone the repository and head over to my folder.
+1. Clone the repository and head over to the folder.
 ```
 git clone https://github.com/humanai-foundation/ISSR.git
+
+Navigate to the project folder
 cd ISSR_Communication_Analysis_Tool_Samuel_Kalu
 ```
+## ⚠️ Windows Installation Note
+
+If you are using **Windows**, please avoid Python 3.12.
+
+Some dependencies (e.g., `pandas==2.1.0`) may fail to install due to missing
+precompiled wheels and Visual Studio build tools.
+
+### ✅ Recommended Python versions
+- Python 3.10
+- Python 3.11
+
+After installing a supported Python version, create a virtual environment
+and install dependencies again:
+
+
 
 2. Create a virtual environment (recommended):
    ```bash

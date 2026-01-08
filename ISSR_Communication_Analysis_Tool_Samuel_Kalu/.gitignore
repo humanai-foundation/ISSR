@@ -5,3 +5,4 @@ csv_outputs/*
 speaker_segments
 debug_app.py
 test_plotting.py
+venv/
