@@ -42,11 +42,11 @@ We build a modular NLP pipeline that:
 ## 🚧 Current Status
 
 ✅ Data collection & cleaning completed  
-✅ Unified dataset prepared (`unified_supervised_v2.csv`)  
-✅ BERT fine-tuning implemented (`train_bert_from_unified.py`)  
+✅ Unified dataset prepared ([Suicidal Ideation Detection Reddit Dataset-Version 2.csv](dataset/Suicidal%20Ideation%20Detection%20Reddit%20Dataset-Version%202.csv))  
+✅ BERT fine-tuning implemented ([finetune_bert_suicide.py](pipeline/finetune_bert_suicide.py))  
 ✅ Model evaluation on external Kaggle dataset  
 ✅ Word bank & sentiment risk outputs  
-✅ Midterm and final reports (`midterm_report.ipynb`, `final_report.ipynb`)  
+✅ Midterm report ([finetune_bert_suicide.py](pipeline/finetune_bert_suicide.py))   
 
 🔜 Future work: explainability tools, cross-platform expansion, geospatial trends with privacy safeguards  
 
