@@ -13,3 +13,43 @@ The Mission of the Institute for Social Science Research (ISSR) at the Universit
 |[Improve Accuracy for Mixed Data Prediction](https://summerofcode.withgoogle.com/programs/2024/projects/mco38xiq)|Shao Jin| Predict and evaluate Alabama youth tobacco usage data. Design and analyze qualitative question answer. |KNN Classifier, Random Forest Classifier, XGBRegressor, RandomForestRegressor|[Click Here](https://github.com/humanai-foundation/ISSR/tree/main/ISSR_Improve_Accuracy_Mixed_Data_Shao_Jin)|[Click Here](https://medium.com/@sj3192/enhancing-program-evaluation-research-by-leveraging-ai-for-integrated-analysis-of-mixed-methods-18c818d77527)|
 |[Fatigue and Distraction Detection for Drivers](https://summerofcode.withgoogle.com/programs/2024/projects/lqT70TLt)|Aditya Arvind|Detect fatigue and driving distractions like phone usage during driving . |Yolov10, Mediapipe, TensorRT,CLIP|[Click Here](https://github.com/humanai-foundation/ISSR/tree/main/ISSR_Fatigue_detection)|[Click Here](https://medium.com/@aditya.arvind97/fatigue-detection-and-driver-distraction-monitoring-b895a5ee287c)|
 
+
+
+
+## Windows Installation Notes
+
+⚠️ **Python 3.12 on Windows**
+Installing dependencies on Windows using Python 3.12 may fail due to
+missing precompiled wheels for some packages (e.g., `pandas`), resulting
+in errors such as:
+
+### Recommended Solution
+- Use **Python 3.10** or **Python 3.11** on Windows for a smoother setup.
+
+### Alternative (Advanced Users)
+- Install **Microsoft Visual C++ Build Tools** to allow building packages
+  from source.
+
+
+
+
+
+
+
+
+## Windows Troubleshooting
+
+### Python 3.12 Installation Issues
+
+On Windows, installing dependencies with **Python 3.12** may fail when
+building packages such as `pandas` from source, resulting in errors like:
+
+This happens because some dependencies do not yet provide precompiled
+wheels for Python 3.12 on Windows.
+
+#### Recommended Solution
+- Use **Python 3.10** or **Python 3.11** on Windows for a stable installation.
+
+#### Alternative (Advanced)
+- Install **Microsoft Visual C++ Build Tools** to allow packages to build
+  from source.
