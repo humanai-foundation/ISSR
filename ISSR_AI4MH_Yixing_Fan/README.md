@@ -42,11 +42,11 @@ We build a modular NLP pipeline that:
 ## 🚧 Current Status
 
 ✅ Data collection & cleaning completed  
-✅ Unified dataset prepared (`unified_supervised_v2.csv`)  
-✅ BERT fine-tuning implemented (`train_bert_from_unified.py`)  
+✅ Unified dataset prepared ([`unified_supervised_v2.csv`](dataset/unified_supervised_v2.csv))  
+✅ BERT fine-tuning implemented ([`train_bert_from_unified.py`](pipeline/train_bert_from_unified.py))  
 ✅ Model evaluation on external Kaggle dataset  
 ✅ Word bank & sentiment risk outputs  
-✅ Midterm and final reports (`midterm_report.ipynb`, `final_report.ipynb`)  
+✅ Midterm and final reports ([`midterm_report.ipynb`](reports/midterm_report.ipynb), [`final_report.ipynb`](reports/final_report.ipynb))  
 
 🔜 Future work: explainability tools, cross-platform expansion, geospatial trends with privacy safeguards  
 
