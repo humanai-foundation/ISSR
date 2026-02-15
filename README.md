@@ -1,15 +1,87 @@
-# ISSR
-![HumanAI x GSOC](ISSR_Gender_Roles_Career_Rashi_Gupta/images/coll.png)
+# ISSR – AI4MH Yixing Fan Enhance
 
-## 1. Background
+> Intelligent Skill Sensing & Refinement toolkit for AI4MakersHub (AI4MH) enhancements by Yixing Fan.
 
-The Mission of the Institute for Social Science Research (ISSR) at the University of Alabama is to promote and support high-quality social science research across various disciplines. The ISSR aims to foster interdisciplinary collaboration, to provide resources and support for social science research, and to contribute to the advancement of knowledge and understanding of social phenomena.
+---
 
-## 2. Projects
-| Project Name | Contributor | Task | ML Techniques | Repository Link | Blog Post |
-|---|---|---|---|---|---|
-|[Examination of the evolution of language among Dark Web users](https://summerofcode.withgoogle.com/programs/2024/projects/kN6CmoUo)|Domenico Lacavalla |Examining changes in criminal language on the dark web over time. |Clustering Techniques-BERT Models-LSTM-LightGBM|[Click Here](https://github.com/humanai-foundation/ISSR/tree/main/ISSR_Dark_Web_Domenico_Lacavalla)|[Click Here](https://medium.com/@domenicolacavalla8/examination-of-the-evolution-of-language-among-dark-web-users-67fd3397e0fb)|
-|[Gender, Roles & Careers: Exploring Congruity Theories](https://summerofcode.withgoogle.com/programs/2024/projects/lz5XGsgO)|Rashi Gupta |Analyzing gender's impact on career choices. |Predictive Techniques-Random Forest Model|[Click Here](https://github.com/humanai-foundation/ISSR/tree/main/ISSR_Gender_Roles_Career_Rashi_Gupta)|[Click Here](https://rashiguptaofficial.medium.com/exploring-gender-roles-in-education-a-grade-wise-analysis-cb87db14bc7d#3e03)|
-|[Improve Accuracy for Mixed Data Prediction](https://summerofcode.withgoogle.com/programs/2024/projects/mco38xiq)|Shao Jin| Predict and evaluate Alabama youth tobacco usage data. Design and analyze qualitative question answer. |KNN Classifier, Random Forest Classifier, XGBRegressor, RandomForestRegressor|[Click Here](https://github.com/humanai-foundation/ISSR/tree/main/ISSR_Improve_Accuracy_Mixed_Data_Shao_Jin)|[Click Here](https://medium.com/@sj3192/enhancing-program-evaluation-research-by-leveraging-ai-for-integrated-analysis-of-mixed-methods-18c818d77527)|
-|[Fatigue and Distraction Detection for Drivers](https://summerofcode.withgoogle.com/programs/2024/projects/lqT70TLt)|Aditya Arvind|Detect fatigue and driving distractions like phone usage during driving . |Yolov10, Mediapipe, TensorRT,CLIP|[Click Here](https://github.com/humanai-foundation/ISSR/tree/main/ISSR_Fatigue_detection)|[Click Here](https://medium.com/@aditya.arvind97/fatigue-detection-and-driver-distraction-monitoring-b895a5ee287c)|
+## 🧭 Quick Navigation
 
+- [Project Overview](#project-overview)
+- [Repository Layout](#repository-layout)
+- [Environment Setup](#environment-setup)
+- [How to Run](#how-to-run)
+- [Docs & Tutorials](#docs--tutorials)
+- [Contribution Guide](#contribution-guide)
+- [License](#license)
+
+---
+
+## Project Overview
+
+ISSR ka goal hai multi-modal sensorimotor skills ko train, evaluate, aur deploy karna—specifically AI4MH workflows (Yixing Fan branch) me refine ki gayi enhancements ke saath. Yeh repo aapko datasets, configs, model checkpoints, aur automation scripts provide karta hai.
+
+Key capabilities:
+
+- Motion & sensor datasets aggregation  
+- Config-driven training & evaluation  
+- Skill refinement + bridging utilities  
+- Visualization aur reporting helpers  
+
+---
+
+## Repository Layout
+
+| Path | Description |
+|------|-------------|
+| [`docs/`](docs/) | Concept notes, diagrams, research references |
+| [`docs/architecture.md`](docs/architecture.md) | System architecture & design details |
+| [`docs/tutorials.md`](docs/tutorials.md) | Step-by-step walkthroughs |
+| [`configs/`](configs/) | Hydra/YAML configs for training, data, evaluation |
+| [`datasets/README.md`](datasets/README.md) | Dataset prep and download instructions |
+| [`scripts/`](scripts/) | Automation scripts (`train.py`, `eval.py`, `download_assets.py`, etc.) |
+| [`issr/`](issr/) | Core Python package (models, envs, planners, utils) |
+| [`notebooks/`](notebooks/) | Analysis & tutorial notebooks |
+| [`experiments/`](experiments/) | Logged runs, metrics, and checkpoints |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contribution process |
+| [`LICENSE`](LICENSE) | License info |
+
+---
+
+## Environment Setup
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/humanai-foundation/ISSR.git
+   cd ISSR_AI4MH_Yixing_Fan_Enhance
+   git lfs install && git lfs pull
+
+How to Run
+1. Download assets
+bashDownloadCopy codepython scripts/download_assets.py
+2. Train / fine-tune
+bashDownloadCopy codepython scripts/train.py \
+  --config-name base_skill \
+  data.path=datasets/aiskill_v2 \
+  trainer.max_epochs=120
+3. Evaluate
+bashDownloadCopy codepython scripts/eval.py \
+  --config-name eval_default \
+  checkpoint=experiments/latest.ckpt
+4. Visualize results
+bashDownloadCopy codepython scripts/visualize.py \
+  --run-dir experiments/run_2025_01_12
+Extra examples: see docs/tutorials.md.
+
+Docs & Tutorials
+
+* 📘 System Architecture
+* 🧠 Skill Library Reference
+* 📂 Dataset Guide
+* 📓 Tutorial Notebooks
+
+
+Contribution Guide
+Open to PRs! Read CONTRIBUTING.md for coding standards, branch naming, aur checklist.
+
+License
+Distributed under the MIT License.
