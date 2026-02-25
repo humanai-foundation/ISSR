@@ -3,6 +3,9 @@
 **AI-powered Behavioral Analysis for Mental Health Crisis Detection**  
 GSoC 2025 @ HumanAI
 ![AI4MH Project Logo](LOGO-1.png)
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![GSoC](https://img.shields.io/badge/GSoC-2025-orange)
 ---
 
 ## 🧠 Overview
@@ -54,46 +57,68 @@ We build a modular NLP pipeline that:
 
 ## 📂 Repo Structure
 
+- 📁 [dataset/](dataset/)
+- 📁 [output/](output/)
+- 📁 [pipeline/](pipeline/)
+  - [bert.py](pipeline/bert.py)
+  - [train_bert_from_unified.py](pipeline/train_bert_from_unified.py)
+  - [eval_csv_iterator.py](pipeline/eval_csv_iterator.py)
+  - [eval_large_csv.py](pipeline/eval_large_csv.py)
+  - [clean_kaggle.py](pipeline/clean_kaggle.py)
+  - [merge_kaggle.py](pipeline/merge_kaggle.py)
+  - [split_supervised.py](pipeline/split_supervised.py)
+  - [fetch_reddit.py](pipeline/fetch_reddit.py)
+  - [generate_word_bank.py](pipeline/generate_word_bank.py)
+  - [generate_wordcloud.py](pipeline/generate_wordcloud.py)
+  - [google_trend_demo.py](pipeline/google_trend_demo.py)
+  - [test_model.py](pipeline/test_model.py)
+
+- 📁 [results/](results/)
+- 📁 [reports/](reports/)
+  - [midterm_report.ipynb](reports/midterm_report.ipynb)
+  - [final_report.ipynb](reports/final_report.ipynb)
+
+- 📄 [requirements.txt](requirements.txt)
+- 📘 [README.md](README.md)
+---
+
+## 🚀 Installation & Setup
+
+### 1️⃣ Clone the Repository
 ```bash
-dataset/                 # Input datasets
-  ├─ kaggle_clean.csv
-  ├─ Suicidal Ideation Detection Reddit Dataset-Version 2.csv
-  ├─ Suicide_Detection.csv
-  └─ Suicide_Ideation_Dataset(Twitter-based).csv
-
-output/                  # Generated outputs
-  ├─ mental_health_wordcloud.png
-  ├─ sentiment_risk_classified.csv
-  ├─ word_bank.csv
-  └─ ...
-
-pipeline/                # Core pipeline scripts
-  ├─ bert.py
-  ├─ train_bert_from_unified.py
-  ├─ eval_csv_iterator.py
-  ├─ eval_large_csv.py
-  ├─ clean_kaggle.py
-  ├─ merge_kaggle.py
-  ├─ split_supervised.py
-  ├─ fetch_reddit.py
-  ├─ generate_word_bank.py
-  ├─ generate_wordcloud.py
-  ├─ google_trend_demo.py
-  └─ test_model.py
-
-results/                 # Model checkpoints and evaluation outputs
-
-reports/                 # Notebooks and documentation
-  ├─ midterm_report.ipynb
-  └─ final_report.ipynb
-
-requirements.txt         # Python dependencies
-README.md                # Project description
+git clone https://github.com/Shalinis19137/GSoC2025-AI4MH.git
+cd GSoC2025-AI4MH
 ```
+
+### 2️⃣ Create Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate      # Windows: venv\Scripts\activate
+```
+
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Running the Pipeline
+
+### Train BERT Model
+```bash
+python pipeline/train_bert_from_unified.py
+```
+
+### Evaluate Model
+```bash
+python pipeline/test_model.py
+```
+
 ---
 
 ## 📖 License
-This project will use the MIT License unless otherwise specified.
+This project is licensed under the MIT License.
 
 ---
 

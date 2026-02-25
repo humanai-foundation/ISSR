@@ -12,12 +12,23 @@ import warnings
 
 import gradio as gr
 import pandas as pd
-from loguru import logger
 
+
+from loguru import logger
 from src.pipeline import process_all_videos_from_path, process_video
 from src.plotting import plot_speaker_charts
 
+required_version = (2, 2, 0)
+current_version = tuple(map(int, pd.__version__.split(".")[:3]))
+
+if current_version < required_version:
+    raise RuntimeError(
+        f"Incompatible pandas version detected: {pd.__version__}. "
+        f"Please install pandas>=2.2.0 for Python 3.12 compatibility."
+    )
+
 warnings.filterwarnings("ignore")
+
 
 
 def get_image_base64(path):
