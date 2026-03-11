@@ -14,3 +14,4 @@ vaderSentiment==3.3.2
 faster-whisper==1.1.1
 networkx==3.3
 gdown==5.2.0
+soundfile==0.12.1
