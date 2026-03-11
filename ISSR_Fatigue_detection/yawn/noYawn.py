@@ -48,7 +48,7 @@ for video in video_list:
 
         for box in result.boxes:
             x0,y0,x1,y1=box.xyxy.cpu().numpy().astype(int)[0]
-            xc,yc,width_bbox,height_bbox=result.boxes.xywhn.cpu().numpy()[0]
+            xc,yc,width_bbox,height_bbox=box.xywhn.cpu().numpy()[0]
             label_string_yawn=f'{no_yawn_number} {xc} {yc} {width_bbox} {height_bbox}\n'
             label_list.append(label_string_yawn)
             
@@ -60,7 +60,7 @@ for video in video_list:
                 eye_number=0
             else:
                 eye_number=1
-            x0,y0,x1,y1=box.xyxy.cpu().numpy().astype(int)[0]
+            x0,y0,x1,y1=box_eyes.xyxy.cpu().numpy().astype(int)[0]
             xc_eyes,yc_eyes,width_bbox_eyes,height_bbox_eyes=box_eyes.xywhn.cpu().numpy()[0]
             label_string_eyes=f'{eye_number} {xc_eyes} {yc_eyes} {width_bbox_eyes} {height_bbox_eyes}\n'
             cv2.rectangle(frame,(x0,y0),(x1,y1),(255,0,0),2)
@@ -73,7 +73,6 @@ for video in video_list:
             break
         with open(save_label_path,'w') as f:
             f.writelines(label_list)
-        f.close()
         cv2.imwrite(save_image_path,frame2)
         frame_count+=1
     

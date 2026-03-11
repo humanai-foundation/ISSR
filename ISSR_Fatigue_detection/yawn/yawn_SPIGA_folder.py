@@ -93,11 +93,10 @@ for video in video_list:
                 
                     cv2.imwrite(image_path,frame2)
                     # Saving label .txt file to a label folder
-                    xc,yc,width_bbox,height_bbox=result.boxes.xywhn.cpu().numpy()[0]
+                    xc,yc,width_bbox,height_bbox=box.xywhn.cpu().numpy()[0]
                     label_string_yawn=f'{yawn_number} {xc} {yc} {width_bbox} {height_bbox}\n'
                     with open(label_path,'a') as f:
                         f.write(label_string_yawn) 
-                    f.close()
             else:
                 if yawn_AR>1.0:
                     eyes_results=model_eyes.predict(frame2)
@@ -126,11 +125,10 @@ for video in video_list:
                     cv2.imwrite(image_path,frame2)
                     # Saving label .txt file to a label folder
                     
-                    xc,yc,width_bbox,height_bbox=result.boxes.xywhn.cpu().numpy()[0]
+                    xc,yc,width_bbox,height_bbox=box.xywhn.cpu().numpy()[0]
                     label_string_yawn=f'{yawn_number} {xc} {yc} {width_bbox} {height_bbox}\n'
                     with open(label_path,'a') as f:
                         f.write(label_string_yawn) 
-                    f.close()
                     
 
             cv2.putText(frame,f"Yawn Ratio:{yawn_AR}",(20,50),cv2.FONT_HERSHEY_COMPLEX,2,(0,0,0),2)
