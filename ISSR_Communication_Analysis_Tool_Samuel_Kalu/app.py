@@ -8,6 +8,7 @@ os.environ["PYANNOTE_CACHE"] = "./model_weights/torch/pyannote"
 
 import base64
 import io
+import traceback
 import warnings
 
 import gradio as gr
@@ -21,10 +22,11 @@ warnings.filterwarnings("ignore")
 
 
 def get_image_base64(path):
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"Image asset not found at '{path}'")
     with open(path, "rb") as image_file:
         encoded = base64.b64encode(image_file.read()).decode("utf-8")
     return f'<img src="data:image/png;base64,{encoded}" width="300" style="display: block; margin: 0 auto;"/>'
-
 
 
 def process_multiple_videos(
@@ -61,7 +63,6 @@ def process_multiple_videos(
 
     if folder_path and os.path.isdir(folder_path):
         logger.info(f"Processing videos from folder: {folder_path}")
-        # Pass checkbox states to process_all_videos_from_path
         process_all_videos_from_path(
             folder_path,
             output_dir,
@@ -76,6 +77,16 @@ def process_multiple_videos(
         ]
         logger.info(
             f"Finished processing videos from folder. Found {len(processed_csvs)} CSVs."
+        )
+
+    elif folder_path and not os.path.isdir(folder_path):
+        logger.warning(f"Provided folder path does not exist: '{folder_path}'")
+        return (
+            f"Error: Folder path '{folder_path}' does not exist or is not a directory. Please check the path and try again.",
+            gr.update(visible=False, value=None),
+            gr.update(visible=False, value=None),
+            gr.update(visible=False, value=None),
+            gr.update(open=False),
         )
 
     elif video_files:
@@ -95,7 +106,6 @@ def process_multiple_videos(
                 )
 
             original_filename = os.path.basename(video_path)
-            # Ensure proper CSV filename generation from video filename
             output_csv_filename = os.path.splitext(original_filename)[0] + ".csv"
             output_csv_path = os.path.join(output_dir, output_csv_filename)
 
@@ -104,8 +114,6 @@ def process_multiple_videos(
             )
 
             try:
-                # Call the process_video function from src.pipeline
-                # Pass checkbox states to process_video
                 process_video(
                     video_path,
                     output_csv_path,
@@ -118,8 +126,6 @@ def process_multiple_videos(
                     f"Successfully processed uploaded video: {original_filename}"
                 )
             except Exception as e:
-                import traceback
-
                 logger.error(
                     f"Exception while processing {original_filename}: {str(e)}"
                 )
@@ -147,10 +153,8 @@ def process_multiple_videos(
 
     if processed_csvs:
         try:
-            # Display the first processed CSV in the DataFrame
             df = pd.read_csv(processed_csvs[0])
             logger.info(f"Displaying data from: {os.path.basename(processed_csvs[0])}")
-            # Generate plots and convert to base64 HTML
             plot_img = plot_speaker_charts(df)
             return (
                 f"Successfully processed {len(processed_csvs)} video(s). Displaying data from {os.path.basename(processed_csvs[0])}.",
@@ -160,8 +164,6 @@ def process_multiple_videos(
                 gr.update(open=True),
             )
         except Exception as e:
-            import traceback
-
             logger.error(
                 f"Error reading processed CSV {os.path.basename(processed_csvs[0])}: {str(e)}"
             )
@@ -214,12 +216,18 @@ def create_interface():
         }
     """
 
+    logo_path = "assets/trip_lab_logo.png"
+    if not os.path.exists(logo_path):
+        logger.warning(f"Logo asset not found at '{logo_path}'. Displaying without logo.")
+        html_img = ""
+    else:
+        html_img = get_image_base64(logo_path)
+
     with gr.Blocks(
         title="Driving Simulator Communication Analysis Tool",
         theme=gr.themes.Monochrome(),
-        css=custom_css,  # Added custom CSS
+        css=custom_css,
     ) as demo:
-        html_img = get_image_base64("assets/trip_lab_logo.png")
         gr.HTML(
             f"""
         <div style="text-align: center;">
@@ -239,12 +247,12 @@ def create_interface():
                 video_files = gr.File(
                     label="Upload Videos (Optional)",
                     file_count="multiple",
-                    type="filepath",  # Ensures a temporary file path is provided
+                    type="filepath",
                     file_types=[".mp4", ".mov", ".avi", ".webm"],
                 )
 
                 with gr.Group():
-                    with gr.Row():  # Make checkboxes inline
+                    with gr.Row():
                         checkbox_ner = gr.Checkbox(
                             label="NER (Named Entity Recognition)",
                             value=True,
@@ -279,7 +287,7 @@ def create_interface():
                 download_csv = gr.File(
                     label="Download Processed CSV",
                     visible=False,
-                    type="filepath",  # This is for download, not upload
+                    type="filepath",
                     file_count="single",
                 )
                 with gr.Accordion("Show Plots", open=True) as plot_accordion:
