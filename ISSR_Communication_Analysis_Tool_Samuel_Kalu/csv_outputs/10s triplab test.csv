@@ -1,5 +1,0 @@
-speaker_id,start_time,end_time,transcribed_content,named_entities,sentiment_score,tone_intensity
-SPEAKER_00,0.0s,3.5s," that for targets that are in the environment, so the CARCAB will look out and pay attention.","[{'entity': 'LAW', 'text': 'CARCAB'}]",-0.1027,0.009462503716349602
-SPEAKER_00,3.6s,5.0s, that screen,[],0.0,0.010286258533596992
-SPEAKER_00,5.4s,6.4s, went out during the mission.,[],0.0,0.0077693224884569645
-SPEAKER_00,7.1s,10.0s," Remember to tap the targets on that ODS, as well as completing the...","[{'entity': 'ORG', 'text': 'ODS'}]",0.2732,0.009329967200756073
