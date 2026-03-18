@@ -1,7 +1,0 @@
-__pycache__
-videos/*
-csv_outputs/*
-*.wav
-speaker_segments
-debug_app.py
-test_plotting.py
