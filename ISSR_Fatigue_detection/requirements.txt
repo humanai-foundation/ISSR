@@ -1,6 +1,6 @@
 --find-links https://download.pytorch.org/whl/torch_stable.html
 opencv-python==4.8.1.78
-pandas==2.2.2
+pandas>=2.1.1
 numpy==1.26.4
 ultralytics==8.2.49
 torch==1.13.1+cu117
