@@ -8,12 +8,16 @@ from sentence_transformers import SentenceTransformer
 import re
 import logging
 import json
+from transformers import pipeline
 
 class EnhancedMIESystem:
-    def __init__(self, ollama_url="http://localhost:11434"):
+    def __init__(self, ollama_url="http://localhost:11434",, use_distilbert=False):
         self.ollama_url = ollama_url
         self.sentence_model = SentenceTransformer('all-MiniLM-L6-v2')
         self.sentiment_analyzer = SentimentIntensityAnalyzer()
+        self.use_distilbert = use_distilbert
+        if self.use_distilbert:
+            self.distilbert_sentiment = pipeline("sentiment-analysis")
         
         # Your existing death keywords
         self.death_keywords = {
@@ -93,8 +97,12 @@ class EnhancedMIESystem:
         }
     
     def analyze_sentiment_and_keywords(self, text):
-        """Your existing sentiment + death word analysis"""
         sentiment = self.sentiment_analyzer.polarity_scores(text)
+        if self.use_distilbert:
+            db_result = self.distilbert_sentiment(text[:512])[0]
+            distilbert_score = db_result['score'] if db_result['label'] == 'POSITIVE' else -db_result['score']
+        else:
+            distilbert_score = None
         
         text_lower = text.lower()
         death_count = sum(1 for word in self.death_keywords if word in text_lower)
@@ -109,7 +117,8 @@ class EnhancedMIESystem:
             'mie_words': mie_count,
             'is_negative': sentiment['compound'] < -0.3,
             'has_death': death_count >= 1,
-            'has_mie': mie_count >= 2
+            'has_mie': mie_count >= 2,
+            'distilbert_sentiment': distilbert_score 
         }
     
     def create_rag_embeddings(self, articles_df):
