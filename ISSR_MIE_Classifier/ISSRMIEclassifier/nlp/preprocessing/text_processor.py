@@ -7,7 +7,7 @@ from typing import List, Dict, Any
 import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
+from nltk.stem import WordNetLemmatizer, PorterStemmer
 
 try:
     nltk.data.find('tokenizers/punkt')
@@ -25,6 +25,7 @@ class TextProcessor:
         self.config = config
         self.stop_words = set(stopwords.words('english'))
         self.lemmatizer = WordNetLemmatizer()
+        self.stemmer = PorterStemmer()
         self.max_length = config["nlp"]["max_text_length"]
         
     def clean_text(self, text: str) -> str:
@@ -61,6 +62,20 @@ class TextProcessor:
         lemmatized_words = [self.lemmatizer.lemmatize(word) for word in words]
         return ' '.join(lemmatized_words)
     
+    def stem_text(self, text: str) -> str:
+        """Stem text using Porter Stemmer.
+
+        Stemming is a faster, rule-based approach that strips word suffixes
+        (e.g. 'running' -> 'run', 'studies' -> 'studi'). It is intentionally
+        kept separate from lemmatization: applying both would let the stemmer
+        undo the linguistically precise output of the lemmatizer, so the two
+        methods should be treated as alternative normalisation strategies rather
+        than sequential steps.
+        """
+        words = word_tokenize(text)
+        stemmed_words = [self.stemmer.stem(word) for word in words]
+        return ' '.join(stemmed_words)
+
     def truncate_text(self, text: str) -> str:
         """Truncate text to maximum length"""
         if len(text) <= self.max_length:
@@ -78,18 +93,37 @@ class TextProcessor:
                 
         return truncated.strip()
     
-    def preprocess(self, title: str, subject: str, text: str) -> str:
-        """Complete preprocessing pipeline"""
+    def preprocess(self, title: str, subject: str, text: str, stemming: bool = False) -> str:
+        """Complete preprocessing pipeline.
+
+        Args:
+            title:    Article title.
+            subject:  Article subject / topic line.
+            text:     Article body.
+            stemming: When False (default) the pipeline applies cleaning →
+                      stopword removal → lemmatization → truncation.
+                      When True, lemmatization is replaced by Porter Stemmer
+                      (cleaning → stopword removal → stemming → truncation).
+                      Combining both normalisation strategies is avoided because
+                      the stemmer would aggressively re-stem the precise output
+                      of the lemmatizer, degrading token quality rather than
+                      improving it.
+        """
         # Combine all text fields
         combined_text = f"{title} {subject} {text}"
-        
-        # Apply preprocessing steps
+
+        # Shared early steps
         cleaned = self.clean_text(combined_text)
         no_stopwords = self.remove_stopwords(cleaned)
-        lemmatized = self.lemmatize_text(no_stopwords)
-        truncated = self.truncate_text(lemmatized)
-        
-        return truncated
+
+        if stemming:
+            # Stemming-only path: faster, more aggressive normalisation
+            normalised = self.stem_text(no_stopwords)
+        else:
+            # Lemmatization-only path: linguistically precise normalisation
+            normalised = self.lemmatize_text(no_stopwords)
+
+        return self.truncate_text(normalised)
     
     def chunk_text(self, text: str, chunk_size: int = None, overlap: int = None) -> List[str]:
         """Split text into chunks for RAG"""
