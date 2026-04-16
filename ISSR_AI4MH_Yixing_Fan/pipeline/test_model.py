@@ -2,7 +2,7 @@ import pandas as pd
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification, Trainer
 from datasets import Dataset
-from sklearn.metrics import accuracy_score, precision_recall_fscore_support
+from sklearn.metrics import accuracy_score, precision_recall_fscore_support, roc_auc_score
 
 # 1. Load model and tokenizer
 model_path = "results/final_model"
@@ -29,9 +29,11 @@ val_dataset.set_format(type="torch", columns=["input_ids", "attention_mask", "la
 def compute_metrics(pred):
     labels = pred.label_ids
     preds = pred.predictions.argmax(-1)
+    probs = torch.softmax(torch.tensor(pred.predictions), dim=1)[:, 1].numpy()
+    roc_auc = roc_auc_score(labels,probs)
     precision, recall, f1, _ = precision_recall_fscore_support(labels, preds, average="binary")
     acc = accuracy_score(labels, preds)
-    return {"accuracy": acc, "f1": f1, "precision": precision, "recall": recall}
+    return {"accuracy": acc, "f1": f1, "precision": precision, "recall": recall , "roc_auc": roc_auc}
 
 trainer = Trainer(model=model, tokenizer=tokenizer)
 preds = trainer.predict(val_dataset)

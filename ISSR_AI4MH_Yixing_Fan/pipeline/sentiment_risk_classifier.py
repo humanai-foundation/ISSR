@@ -18,9 +18,39 @@ text_col = "cleaned_text"
 # Step 2: Sentiment classification using VADER
 print("🔍 Running sentiment analysis (VADER)...")
 sia = SentimentIntensityAnalyzer()
+hf_pipeline = None
+textblob_analyzer = None
 
-def classify_sentiment(text):
-    """Classify sentiment using VADER compound score."""
+def classify_sentiment(text, use_textblob=False, use_huggingface=False):
+    """Classify sentiment using VADER (default), TextBlob, or HuggingFace pipeline."""
+    global hf_pipeline, textblob_analyzer
+
+    if use_huggingface:
+        if hf_pipeline is None:
+            from transformers import pipeline
+            hf_pipeline = pipeline("sentiment-analysis", truncation=True, max_length=512)
+        result = hf_pipeline(str(text))[0]
+        label = result["label"].lower()
+        if "pos" in label:
+            return "Positive"
+        elif "neg" in label:
+            return "Negative"
+        else:
+            return "Neutral"
+
+    if use_textblob:
+        if textblob_analyzer is None:
+            from textblob import TextBlob
+            textblob_analyzer = TextBlob
+        polarity = textblob_analyzer(str(text)).sentiment.polarity
+        if polarity > 0.1:
+            return "Positive"
+        elif polarity < -0.1:
+            return "Negative"
+        else:
+            return "Neutral"
+
+    # Default: VADER
     score = sia.polarity_scores(text)['compound']
     if score >= 0.3:
         return "Positive"
@@ -36,13 +66,13 @@ print("🚨 Assessing risk levels using keyword matching...")
 
 high_risk_keywords = [
     "end it", "unalive", "kill myself", "disappear", "suicide", 
-    "can’t go on", "i’m done", "give up", "sleep forever", 
+    "can't go on", "i'm done", "give up", "sleep forever", 
     "worthless", "hopeless", "kms", "no one would care", "void", "spiraling"
 ]
 
 moderate_risk_keywords = [
     "feel lost", "need help", "relapse", "panic", "empty", 
-    "depressed", "struggling", "overwhelmed", "can’t sleep", "numb"
+    "depressed", "struggling", "overwhelmed", "can't sleep", "numb"
 ]
 
 def classify_risk(text):

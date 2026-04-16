@@ -31,7 +31,7 @@ keywords = [
     "anxiety attack", "feeling empty", "burnout", "mental exhaustion", "can't sleep",
     "constant worry", "feeling worthless", "no motivation", "social isolation", "panic disorder",
     "intrusive thoughts", "emotional pain", "mental fog", "dissociation", "feeling trapped",
-    "racing thoughts", "mood swings", "emotional breakdown", "mental health crisis", "therapy needed"
+    "racing thoughts", "mood swings", "emotional breakdown", "mental health crisis", "therapy needed" , "feel like a burden" ,"nobody cares about me"
 ]
 
 subreddits = [
@@ -41,7 +41,7 @@ subreddits = [
     "mentalhealthawareness", "bipolar", "traumatoolbox", "mentalhealthmemes", "mentalhealthart",
     "mentalhealthvideos", "mentalhealthresources", "mentalhealthadvice", "mentalhealthstories",
     "mentalhealthchat", "mentalhealthhelp", "mentalhealthcommunity",
-    "mentalhealthmatters", "mentalhealthwarriors"
+    "mentalhealthmatters", "mentalhealthwarriors","healthanxiety" ,"KindVoice"
 ]
 
 # ========== Preprocessing function ==========
