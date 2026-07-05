@@ -237,9 +237,3 @@ The model should **not** be deployed in production environments where its output
 The dataset used for training was constructed by merging publicly available datasets and is intended for research purposes only. As such, the model may inherit biases and limitations present in the source data.
 
 Users of this repository are responsible for ensuring that any use of the code, models, or datasets complies with applicable ethical guidelines, privacy regulations, and institutional review policies.
-
----
- 
-# License
-
-This project is intended for **research and educational purposes**. Please ensure ethical and responsible use when working with mental health-related data.
