@@ -223,7 +223,7 @@ This project is being developed as part of **Google Summer of Code (GSoC) 2026**
 - Hailey Richardson
 - Anna Thrash
 
-I also acknowledge the creators of the publicly available datasets and the open-source communities behind Hugging Face, PyTorch, spaCy, PRAW, VADER, GeoPy, and Nominatim, whose tools and resources made this project possible.
+  I also acknowledge the creators of the publicly available datasets and the open-source communities behind Hugging Face, PyTorch, spaCy, PRAW, VADER, GeoPy, and Nominatim, whose tools and resources made this project possible.
 ---
 
 # Disclaimer
