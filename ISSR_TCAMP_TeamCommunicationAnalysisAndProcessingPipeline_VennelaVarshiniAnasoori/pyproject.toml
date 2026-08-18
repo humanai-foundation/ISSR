@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "tcamp"
+version = "0.1.0"
+description = "Team Communication Analysis and Processing Pipeline for human-factors research"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Vennela Varshini Anasoori", email = "vennelavarshini07@gmail.com"},
+]
+keywords = ["audio", "speech", "enhancement", "human-factors", "team-communication"]
+
+dependencies = [
+    "numpy>=1.24.0",
+    "soundfile>=0.12.1",
+    "librosa>=0.10.0",
+    "scipy>=1.10.0",
+    "pystoi>=0.3.3",
+    "noisereduce>=3.0.2",
+    "pytest>=7.0",
+]
+
+[project.optional-dependencies]
+deepfilter = ["deepfilternet>=0.5.6"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

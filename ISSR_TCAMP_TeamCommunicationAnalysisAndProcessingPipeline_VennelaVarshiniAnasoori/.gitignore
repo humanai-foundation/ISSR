@@ -1,0 +1,50 @@
+# TCAMP .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Audio files (large binaries)
+*.wav
+*.mp3
+*.flac
+*.ogg
+
+# TCAMP pipeline outputs
+tcamp_output/
+outputs/
+*.rttm
+
+# Model files
+models/
+*.onnx
+*.pt
+*.bin
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
