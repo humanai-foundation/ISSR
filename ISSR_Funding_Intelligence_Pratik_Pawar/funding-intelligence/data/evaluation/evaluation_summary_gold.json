@@ -1,0 +1,54 @@
+{
+  "eval_set": "eval_set_gold.json",
+  "total_foas_evaluated": 20,
+  "global": {
+    "precision": 0.442,
+    "recall": 0.654,
+    "f1": 0.527,
+    "tp": 53,
+    "fp": 67,
+    "fn": 28
+  },
+  "per_category": {
+    "method": {
+      "precision": 0.429,
+      "recall": 0.545,
+      "f1": 0.48,
+      "tp": 6,
+      "fp": 8,
+      "fn": 5
+    },
+    "population": {
+      "precision": 0.4,
+      "recall": 0.75,
+      "f1": 0.522,
+      "tp": 6,
+      "fp": 9,
+      "fn": 2
+    },
+    "research_discipline": {
+      "precision": 0.405,
+      "recall": 0.739,
+      "f1": 0.523,
+      "tp": 17,
+      "fp": 25,
+      "fn": 6
+    },
+    "research_domain": {
+      "precision": 0.231,
+      "recall": 0.3,
+      "f1": 0.261,
+      "tp": 3,
+      "fp": 10,
+      "fn": 7
+    },
+    "sponsor_theme": {
+      "precision": 0.583,
+      "recall": 0.724,
+      "f1": 0.646,
+      "tp": 21,
+      "fp": 15,
+      "fn": 8
+    }
+  }
+}

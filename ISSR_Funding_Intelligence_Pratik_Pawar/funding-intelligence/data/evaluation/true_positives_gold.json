@@ -1,0 +1,532 @@
+[
+  {
+    "foa_id": "fc26e105-5735-4841-a25f-d002ca3e4e8d",
+    "title": "Foundational Research in Robotics",
+    "concept": "nsf_eng",
+    "label": "Engineering",
+    "category": "research_discipline",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "and proposals are encouraged across the full range of fundamental engineering and computer science research challenges arising in robotics. To"
+  },
+  {
+    "foa_id": "fc26e105-5735-4841-a25f-d002ca3e4e8d",
+    "title": "Foundational Research in Robotics",
+    "concept": "great_05",
+    "label": "General Science",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.3084,
+    "context": "robot or a class of robots, as defined above. [Is there a robot?] The goal of the project should be to endow a robot or a class of robots with new and useful capabilities or to significantly enhance e"
+  },
+  {
+    "foa_id": "59933d5a-c9c6-4af5-b4a4-71ff30a32737",
+    "title": "Circuits and Systems for Communications and Sensing (CSCS)",
+    "concept": "nsf_eng",
+    "label": "Engineering",
+    "category": "research_discipline",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "(CSCS) program supports the key role of electrical engineering in future communications, sensing, circuits, and signal"
+  },
+  {
+    "foa_id": "59933d5a-c9c6-4af5-b4a4-71ff30a32737",
+    "title": "Circuits and Systems for Communications and Sensing (CSCS)",
+    "concept": "nsf_cise",
+    "label": "Computer and Information Science and Engineering",
+    "category": "research_discipline",
+    "layer": "layer_2_embedding",
+    "confidence": 0.4138,
+    "context": "projects funded by this program Map of recent awards made through this program Organization(s) Directorate for Engineering (ENG) Division of Electrical, Communications and Cyber Systems (ENG/ECCS) Upc"
+  },
+  {
+    "foa_id": "59933d5a-c9c6-4af5-b4a4-71ff30a32737",
+    "title": "Circuits and Systems for Communications and Sensing (CSCS)",
+    "concept": "method_01",
+    "label": "Machine Learning",
+    "category": "method",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "at once, enabling faster computation and better security. Machine learning can further improve signal processing, enabling new applications in"
+  },
+  {
+    "foa_id": "1cd42e40-0472-4f1a-b853-651824bc46c1",
+    "title": "SBIR/STTR: Developing Deep Technologies",
+    "concept": "great_05",
+    "label": "General Science",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.3152,
+    "context": "while developing and expanding the U.S. workforce. The NSF SBIR/STTR programs fund across nearly all technology areas and market sectors; the programs do not solicit specific technologies or procure g"
+  },
+  {
+    "foa_id": "1cd42e40-0472-4f1a-b853-651824bc46c1",
+    "title": "SBIR/STTR: Developing Deep Technologies",
+    "concept": "pop_19",
+    "label": "Small Business Owners",
+    "category": "population",
+    "layer": "layer_2_embedding",
+    "confidence": 0.4697,
+    "context": "Small Business Innovation Research / Small Business Technology Transfer Phase I, Phase II, Fast-Track Programs SBIR/STTR: Developing Deep Technologies that Advance U.S. Competitiveness and Security Su"
+  },
+  {
+    "foa_id": "1cd42e40-0472-4f1a-b853-651824bc46c1",
+    "title": "SBIR/STTR: Developing Deep Technologies",
+    "concept": "nsf_tip",
+    "label": "Technology Innovation and Partnerships",
+    "category": "research_discipline",
+    "layer": "layer_2_embedding",
+    "confidence": 0.51,
+    "context": "Small Business Innovation Research / Small Business Technology Transfer Phase I, Phase II, Fast-Track Programs SBIR/STTR: Developing Deep Technologies that Advance U.S. Competitiveness and Security Su"
+  },
+  {
+    "foa_id": "150c3b26-f85b-43b0-8398-e02c2312c7eb",
+    "title": "Catalysis",
+    "concept": "great_05",
+    "label": "General Science",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.355,
+    "context": "Proposers can view budget amounts and other information from recent awards made by this program via the ?What Has Been Funded (Recent Awards Made Through This Program, with Abstracts)? link towards th"
+  },
+  {
+    "foa_id": "150c3b26-f85b-43b0-8398-e02c2312c7eb",
+    "title": "Catalysis",
+    "concept": "nsf_mps",
+    "label": "Mathematical and Physical Sciences",
+    "category": "research_discipline",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": ") in the Division of Chemistry in the Directorate for Mathematical and Physical Sciences. Proposals focused on biocatalytic processes, including proposals focusing"
+  },
+  {
+    "foa_id": "d4a1f68a-0eed-4b9e-8fcf-eec0a568e7de",
+    "title": "Sociology",
+    "concept": "method_06",
+    "label": "Survey Research",
+    "category": "method",
+    "layer": "layer_2_embedding",
+    "confidence": 0.4157,
+    "context": "Sociology The Sociology Program supports basic research on all forms of human social organization \u2014 societies, institutions, groups and demography \u2014 and processes of individual and institutional chang"
+  },
+  {
+    "foa_id": "d4a1f68a-0eed-4b9e-8fcf-eec0a568e7de",
+    "title": "Sociology",
+    "concept": "great_05",
+    "label": "General Science",
+    "category": "sponsor_theme",
+    "layer": "layer_3_llm",
+    "confidence": 0.95,
+    "context": "[Resolved against Income Security] must be appropriate to the questions asked; and (4) the proposed research must advance our understanding of social processes, structures and methods. NSF also offers"
+  },
+  {
+    "foa_id": "d4a1f68a-0eed-4b9e-8fcf-eec0a568e7de",
+    "title": "Sociology",
+    "concept": "nsf_sbe",
+    "label": "Social Behavioral and Economic Sciences",
+    "category": "research_discipline",
+    "layer": "layer_2_embedding",
+    "confidence": 0.64,
+    "context": "Sociology The Sociology Program supports basic research on all forms of human social organization \u2014 societies, institutions, groups and demography \u2014 and processes of individual and institutional chang"
+  },
+  {
+    "foa_id": "5d49d916-221b-4a83-bc69-274c33621b0c",
+    "title": "Centers of Research Excellence in Science and Technology (CREST)",
+    "concept": "pop_12",
+    "label": "Students",
+    "category": "population",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "postdoctoral scholars, and an expanded presence of research doctoral students in science, technology, engineering, and mathematics ("
+  },
+  {
+    "foa_id": "5d49d916-221b-4a83-bc69-274c33621b0c",
+    "title": "Centers of Research Excellence in Science and Technology (CREST)",
+    "concept": "great_05",
+    "label": "General Science",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.4958,
+    "context": "Centers of Research Excellence in Science and Technology - Research Infrastructure for Science and Engineering The Centers of Research Excellence in Science and Technology (CREST) program provides sup"
+  },
+  {
+    "foa_id": "5d49d916-221b-4a83-bc69-274c33621b0c",
+    "title": "Centers of Research Excellence in Science and Technology (CREST)",
+    "concept": "nsf_edu",
+    "label": "STEM Education",
+    "category": "research_discipline",
+    "layer": "layer_3_llm",
+    "confidence": 0.95,
+    "context": "[Resolved against Mathematical and Physical Sciences] Centers of Research Excellence in Science and Technology - Research Infrastructure for Science and Engineering The Centers of Research Excellence "
+  },
+  {
+    "foa_id": "5d49d916-221b-4a83-bc69-274c33621b0c",
+    "title": "Centers of Research Excellence in Science and Technology (CREST)",
+    "concept": "great_09",
+    "label": "Education and Training",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.3286,
+    "context": "institutions, at the time of proposal submission, that have enrollments of 50% or moreU.S. resident students (non-international) (based on total student enrollment) who are members of minority groups "
+  },
+  {
+    "foa_id": "5d49d916-221b-4a83-bc69-274c33621b0c",
+    "title": "Centers of Research Excellence in Science and Technology (CREST)",
+    "concept": "pop_08",
+    "label": "Racial and Ethnic Minorities",
+    "category": "population",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": ") program provides support to enhance the research capabilities of minority-serving institutions (MSIs) as defined in this"
+  },
+  {
+    "foa_id": "052dbdbf-7b76-45c5-b2ec-71d14733b8d6",
+    "title": "NSF INCLUDES Initiative",
+    "concept": "nsf_edu",
+    "label": "STEM Education",
+    "category": "research_discipline",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "even though proposals must be submitted to the Directorate for STEM Education (EDU) / Division of Equity for Excellence in"
+  },
+  {
+    "foa_id": "052dbdbf-7b76-45c5-b2ec-71d14733b8d6",
+    "title": "NSF INCLUDES Initiative",
+    "concept": "pop_08",
+    "label": "Racial and Ethnic Minorities",
+    "category": "population",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "Johnson Inclusion across the Nation of Communities of Learners of Underrepresented Discoverers in Engineering and Science (INCLUDES) Initiative In"
+  },
+  {
+    "foa_id": "052dbdbf-7b76-45c5-b2ec-71d14733b8d6",
+    "title": "NSF INCLUDES Initiative",
+    "concept": "great_09",
+    "label": "Education and Training",
+    "category": "sponsor_theme",
+    "layer": "layer_3_llm",
+    "confidence": 0.95,
+    "context": "[Resolved against General Science] change, resulting in a STEM workforce that reflects the Nation\u2019s population. More specifically, the INCLUDES Initiative seeks to motivate and accelerate collaborativ"
+  },
+  {
+    "foa_id": "a6c4bfa8-fa67-4d10-8de4-472e1f25d220",
+    "title": "Robert Noyce Teacher Scholarship Program",
+    "concept": "nsf_edu",
+    "label": "STEM Education",
+    "category": "research_discipline",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "include at least one individual with expertise and experience in STEM education research and at least one individual with an advanced degree"
+  },
+  {
+    "foa_id": "a6c4bfa8-fa67-4d10-8de4-472e1f25d220",
+    "title": "Robert Noyce Teacher Scholarship Program",
+    "concept": "pop_12",
+    "label": "Students",
+    "category": "population",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": ", senior personnel, postdoctoral scholars, graduate or undergraduate students or trainees. In addition, the Noyce program supports"
+  },
+  {
+    "foa_id": "a6c4bfa8-fa67-4d10-8de4-472e1f25d220",
+    "title": "Robert Noyce Teacher Scholarship Program",
+    "concept": "great_09",
+    "label": "Education and Training",
+    "category": "sponsor_theme",
+    "layer": "layer_3_llm",
+    "confidence": 0.95,
+    "context": "[Resolved against General Science] Robert Noyce Teacher Scholarship Program The National Science FoundationRobert Noyce Teacher Scholarship Program (Noyce)invites innovative proposals that address the"
+  },
+  {
+    "foa_id": "6fd2fb9a-fec4-4fdd-b4ba-837f8a7eb8a0",
+    "title": "Unleashing Tribal Energy Development",
+    "concept": "great_04",
+    "label": "Energy",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.3936,
+    "context": "Unleashing Tribal Energy Development DE-FOA-0003548: Unleashing Tribal Energy Development Under this Notice of Funding Opportunity (NOFO), the DOE Office of Indian Energy Policy and Programs is solici"
+  },
+  {
+    "foa_id": "6fd2fb9a-fec4-4fdd-b4ba-837f8a7eb8a0",
+    "title": "Unleashing Tribal Energy Development",
+    "concept": "sdg_07",
+    "label": "Affordable and Clean Energy",
+    "category": "research_domain",
+    "layer": "layer_2_embedding",
+    "confidence": 0.4517,
+    "context": "Unleashing Tribal Energy Development DE-FOA-0003548: Unleashing Tribal Energy Development Under this Notice of Funding Opportunity (NOFO), the DOE Office of Indian Energy Policy and Programs is solici"
+  },
+  {
+    "foa_id": "6fd2fb9a-fec4-4fdd-b4ba-837f8a7eb8a0",
+    "title": "Unleashing Tribal Energy Development",
+    "concept": "pop_07",
+    "label": "Indigenous Peoples",
+    "category": "population",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "Unleashing Tribal Energy Development DE-FOA-0003548: Unleashing Tribal Energy Development"
+  },
+  {
+    "foa_id": "6e2262d5-8596-4fdf-b8f0-e6e426395319",
+    "title": "Engineering for Civil Infrastructure",
+    "concept": "great_05",
+    "label": "General Science",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.3106,
+    "context": "Engineering for Civil Infrastructure The Engineering for Civil Infrastructure (ECI) program supports fundamental research in geotechnical, structural, materials, architectural, and coastal engineering"
+  },
+  {
+    "foa_id": "6e2262d5-8596-4fdf-b8f0-e6e426395319",
+    "title": "Engineering for Civil Infrastructure",
+    "concept": "nsf_eng",
+    "label": "Engineering",
+    "category": "research_discipline",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "Engineering for Civil Infrastructure The Engineering for Civil Infrastructure (ECI"
+  },
+  {
+    "foa_id": "6e2262d5-8596-4fdf-b8f0-e6e426395319",
+    "title": "Engineering for Civil Infrastructure",
+    "concept": "sdg_09",
+    "label": "Industry Innovation and Infrastructure",
+    "category": "research_domain",
+    "layer": "layer_2_embedding",
+    "confidence": 0.4548,
+    "context": "Engineering for Civil Infrastructure The Engineering for Civil Infrastructure (ECI) program supports fundamental research in geotechnical, structural, materials, architectural, and coastal engineering"
+  },
+  {
+    "foa_id": "2b26ca51-7268-4e56-95d9-5de05d8aac42",
+    "title": "Cognitive Neuroscience",
+    "concept": "great_05",
+    "label": "General Science",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.4215,
+    "context": "The program is particularly interested in proposals that achieve or enable convergence across multiple techniques. Critically, proposals will be returned without review if they are focused on: 1) eith"
+  },
+  {
+    "foa_id": "f4a9e9f4-ba18-411c-a2ac-d99449d96f9f",
+    "title": "Electrochemical Systems",
+    "concept": "nsf_eng",
+    "label": "Engineering",
+    "category": "research_discipline",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "theInterfacial Engineeringprogram; and 3) theProcess Systems, Reaction Engineering, and Molecular Thermodynamicsprogram. The goal of theElectrochemical Systemsprogram"
+  },
+  {
+    "foa_id": "f4a9e9f4-ba18-411c-a2ac-d99449d96f9f",
+    "title": "Electrochemical Systems",
+    "concept": "nsf_mps",
+    "label": "Mathematical and Physical Sciences",
+    "category": "research_discipline",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "in the Division of Materials Research of the Directorate for Mathematical and Physical Sciences. Proposals that focus on the generation of thermal energy"
+  },
+  {
+    "foa_id": "f4a9e9f4-ba18-411c-a2ac-d99449d96f9f",
+    "title": "Electrochemical Systems",
+    "concept": "sdg_07",
+    "label": "Affordable and Clean Energy",
+    "category": "research_domain",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "and high-power density batteries suitable for transportation and renewable energy storage applications are of primary interest. Advanced systems involving"
+  },
+  {
+    "foa_id": "662f4450-bb2e-48e7-84ae-41103516a1dd",
+    "title": "EPSCoR FEC",
+    "concept": "great_05",
+    "label": "General Science",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.471,
+    "context": "EPSCoR Research Infrastructure Improvement Program: Focused EPSCoR Collaborations Program (FEC) The Established Program to Stimulate Competitive Research (EPSCoR) is designed to fulfill the mandate of"
+  },
+  {
+    "foa_id": "662f4450-bb2e-48e7-84ae-41103516a1dd",
+    "title": "EPSCoR FEC",
+    "concept": "great_09",
+    "label": "Education and Training",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.403,
+    "context": "EPSCoR recognizes that the development of early-career faculty is critical to sustaining and advancing research capacity. *Who May Submit Proposals: Proposals may only be submitted by the following: -"
+  },
+  {
+    "foa_id": "b24f1220-a15b-4056-bf94-28aeed4eea65",
+    "title": "Electronic, Photonic, Magnetic, and Quantum Devices (EPMQD)",
+    "concept": "nsf_eng",
+    "label": "Engineering",
+    "category": "research_discipline",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "Name Email EPMQD Program Team eccs-epmqd@nsf.gov Organization(s) Directorate for Engineering (ENG) Division of Electrical, Communications and Cyber"
+  },
+  {
+    "foa_id": "b24f1220-a15b-4056-bf94-28aeed4eea65",
+    "title": "Electronic, Photonic, Magnetic, and Quantum Devices (EPMQD)",
+    "concept": "great_04",
+    "label": "Energy",
+    "category": "sponsor_theme",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": ", driving innovations in computing, communications, healthcare, energy and other critical technologies. Supports fundamental research to design"
+  },
+  {
+    "foa_id": "42c60457-3c29-477e-8530-0a47ff782c64",
+    "title": "Infrastructure Innovation for Biological Research",
+    "concept": "method_19",
+    "label": "Bioinformatics",
+    "category": "method",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "is broadly applicable to researchers in three programmatic areas: Bioinformatics, Instrumentation, and Research Methods. Infrastructure supported by"
+  },
+  {
+    "foa_id": "42c60457-3c29-477e-8530-0a47ff782c64",
+    "title": "Infrastructure Innovation for Biological Research",
+    "concept": "great_05",
+    "label": "General Science",
+    "category": "sponsor_theme",
+    "layer": "layer_3_llm",
+    "confidence": 0.95,
+    "context": "[Resolved against International Affairs] organizations: Independent museums, observatories, research laboratories, professional societies and similar organizations located in the U.S. that are directl"
+  },
+  {
+    "foa_id": "42c60457-3c29-477e-8530-0a47ff782c64",
+    "title": "Infrastructure Innovation for Biological Research",
+    "concept": "nsf_bio",
+    "label": "Biological Sciences",
+    "category": "research_discipline",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "or greatly improved research tools and methods that advance contemporary biology in any research area supported by the Directorate forBiological Sciences"
+  },
+  {
+    "foa_id": "b4a823b7-0ee7-429b-937b-52cf569e09ba",
+    "title": "Science of Science: Biomedical Research Enterprise",
+    "concept": "great_05",
+    "label": "General Science",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.5083,
+    "context": "A Science of Science Approach to Analyzing and Innovating the Biomedical Research Enterprise The National Science Foundation (NSF) and the National Institutes of Health (NIH) are interested in proposa"
+  },
+  {
+    "foa_id": "b4a823b7-0ee7-429b-937b-52cf569e09ba",
+    "title": "Science of Science: Biomedical Research Enterprise",
+    "concept": "nsf_sbe",
+    "label": "Social Behavioral and Economic Sciences",
+    "category": "research_discipline",
+    "layer": "layer_3_llm",
+    "confidence": 0.95,
+    "context": "[Resolved against Technology Innovation and Partnerships] A Science of Science Approach to Analyzing and Innovating the Biomedical Research Enterprise The National Science Foundation (NSF) and the Nat"
+  },
+  {
+    "foa_id": "b4a823b7-0ee7-429b-937b-52cf569e09ba",
+    "title": "Science of Science: Biomedical Research Enterprise",
+    "concept": "method_21",
+    "label": "Policy Analysis",
+    "category": "method",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "drawing from the scientific expertise of the science of science policy research community. NSF promotes the progress of science by maintaining"
+  },
+  {
+    "foa_id": "b4a823b7-0ee7-429b-937b-52cf569e09ba",
+    "title": "Science of Science: Biomedical Research Enterprise",
+    "concept": "great_02",
+    "label": "Health",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.4138,
+    "context": "A Science of Science Approach to Analyzing and Innovating the Biomedical Research Enterprise The National Science Foundation (NSF) and the National Institutes of Health (NIH) are interested in proposa"
+  },
+  {
+    "foa_id": "facd39aa-a0de-4980-bd40-a35ab68f8811",
+    "title": "Correctness for Scientific Computing Systems",
+    "concept": "great_05",
+    "label": "General Science",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.3329,
+    "context": "research laboratories, professional societies and similar organizations located in the U.S. that are directly associated with educational or research activities. - Institutions of Higher Education (IH"
+  },
+  {
+    "foa_id": "facd39aa-a0de-4980-bd40-a35ab68f8811",
+    "title": "Correctness for Scientific Computing Systems",
+    "concept": "great_04",
+    "label": "Energy",
+    "category": "sponsor_theme",
+    "layer": "layer_1_terminological",
+    "confidence": 1.0,
+    "context": "of the National Science Foundation (NSF) and the Department of Energy (DOE). The program addresses challenges that are"
+  },
+  {
+    "foa_id": "facd39aa-a0de-4980-bd40-a35ab68f8811",
+    "title": "Correctness for Scientific Computing Systems",
+    "concept": "nsf_cise",
+    "label": "Computer and Information Science and Engineering",
+    "category": "research_discipline",
+    "layer": "layer_2_embedding",
+    "confidence": 0.4866,
+    "context": "computing applications are inherently statistical, use probabilistic or randomized algorithms, and/or deal with uncertain data, probabilistic notions of correctness may be needed. It is also critical "
+  },
+  {
+    "foa_id": "facd39aa-a0de-4980-bd40-a35ab68f8811",
+    "title": "Correctness for Scientific Computing Systems",
+    "concept": "method_13",
+    "label": "Simulation and Modeling",
+    "category": "method",
+    "layer": "layer_2_embedding",
+    "confidence": 0.4118,
+    "context": "computing applications are inherently statistical, use probabilistic or randomized algorithms, and/or deal with uncertain data, probabilistic notions of correctness may be needed. It is also critical "
+  },
+  {
+    "foa_id": "b4a0ea87-6c52-47be-909d-3a3fd3c29764",
+    "title": "FAIROS - Findable Accessible Interoperable Reusable Open Science",
+    "concept": "great_05",
+    "label": "General Science",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.4078,
+    "context": "Findable Accessible Interoperable Reusable Open Science The FAIROS Program seeks to support a broad range of transformative open science activities including but not limited to i.) Research, education"
+  },
+  {
+    "foa_id": "b4a0ea87-6c52-47be-909d-3a3fd3c29764",
+    "title": "FAIROS - Findable Accessible Interoperable Reusable Open Science",
+    "concept": "method_17",
+    "label": "Data Science",
+    "category": "method",
+    "layer": "layer_2_embedding",
+    "confidence": 0.4024,
+    "context": "Findable Accessible Interoperable Reusable Open Science The FAIROS Program seeks to support a broad range of transformative open science activities including but not limited to i.) Research, education"
+  },
+  {
+    "foa_id": "b4a0ea87-6c52-47be-909d-3a3fd3c29764",
+    "title": "FAIROS - Findable Accessible Interoperable Reusable Open Science",
+    "concept": "nsf_cise",
+    "label": "Computer and Information Science and Engineering",
+    "category": "research_discipline",
+    "layer": "layer_2_embedding",
+    "confidence": 0.4463,
+    "context": "the major disciplinary impact of the proposed work to ascertain that the scientific focus and budget of the proposed work are appropriate for this solicitation. In the case of proposals focused on Cro"
+  },
+  {
+    "foa_id": "160c5a72-dfcd-4061-995e-a05e1d239145",
+    "title": "Division of Chemistry: Disciplinary Research Programs",
+    "concept": "great_05",
+    "label": "General Science",
+    "category": "sponsor_theme",
+    "layer": "layer_2_embedding",
+    "confidence": 0.349,
+    "context": "Division of Chemistry: Disciplinary Research Programs: No Deadline Pilot With this solicitation, the Division of Chemistry is piloting the removal of deadlines for the submission of proposals to the C"
+  }
+]

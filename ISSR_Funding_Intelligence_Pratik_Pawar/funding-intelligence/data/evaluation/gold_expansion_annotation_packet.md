@@ -1,0 +1,291 @@
+# Gold Set Expansion — Annotation Packet
+
+20 FOAs to bring `eval_set_gold.json` from 20 -> 40.
+Fill in `TAGS:` (comma-separated concept IDs from Documentation/ONTOLOGY.md) and
+`RATIONALE:` for each entry below, then run
+`scripts/merge_annotation_packet.py`.
+
+Primary focus only (Documentation/ANNOTATION_CODEBOOK.md) — don't tag something
+just because the word appears once in passing.
+
+---
+
+## [1/20] NSF — The Division of Earth Sciences Realigns the Disciplinary Research Funding Program Portfolio with Four New Programs
+FOA_ID: 5572c2ab-ea3f-4431-9dfd-2148ab92d079
+
+### Program Description
+Dear Colleague Letter The Division of Earth Sciences Realigns the Disciplinary Research Funding Program Portfolio with Four New Programs Announces the launch of four new programs designed to realign the division’s support for Earth sciences research, expand support for a broader range of award sizes and project scopes and better meet the evolving needs of the research community. December 10, 2024 Announces the launch of four new programs designed to realign the division’s support for Earth sciences research, expand support for a broader range of award sizes and project scopes and better meet the evolving needs of the research community. Dear Colleagues: The Division of Earth Sciences (EAR) is excited to announce four new programs: Chemical Evolution of the Solid Earth and Volcanology (CESEV) Life and Environments through Time (LET) Structure and Physics of the Solid Earth (SPSE) Water, Landscape, and Critical Zone Processes (WaLCZ) These programs reflect a realignment of the EAR disciplinary science programs to better support the Earth sciences research community. EAR leadership and staff have been working together over the past year to explore different models for how EAR could organize and manage programs, with the goal of better serving the Earth science research community. The Division recognizes that the nature of Earth science is changing, with more diversity in the breadth and scope of questions that may span multiple domains of research. The new programs are broad in scope to make it simpler to find a review home for a research proposal. The programs are designed to more readily support disciplinary, multidisciplinary, and interdisciplinary science and provide greater flexibility to support a wider range of award sizes and project scopes. While these changes realign previous disciplinary and interdisciplinary programs, the overall scope of science supported by the Division remains unchanged. So that prospective proposers may better understand these changes, EAR encourages all interested parties to read the new solicitations, review additional information provided on the EAR website , and attend one or more of the upcoming informational webinars. The new program solicitations are published and currently accepting proposals. There are no deadlines, so investigators can submit proposals at any time in response to the new solicitations. Thirty days after the posting of these new solicitations, the existing disciplinary programs, Geobiology and Low-Temperature Geochemistry (GG), Geomorphology and Land-use Dynamics (GLD), Geophysics (PH), Hydrologic Sciences (HS), Petrology and Geochemistry (CH), Sedimentary Geology and Paleobiology (SGP), and Tectonics (TE) will be archived and no longer accept new proposals. The archiving of these programs accompanies the prior archiving of the Critical Zone Network (CZNet), Cooperative Studies of the Earth’s Deep Interior (CSEDI), and Frontier Research in Earth Sciences (FRES). EAR continues to welcome proposals that take bold, interdisciplinary approaches to understanding the Earth. When the existing programs are archived, proposals in process but not yet submitted will need to be submitted to one of the new programs following the proposal preparation instructions in the respective solicitations. All proposals currently under review or submitted prior to the program archive date will be reviewed and evaluated according to those solicitations. EAR Instrumentation and Facilities (IF), Geoinformatics (GI), and Centers for Innovation and Community Engagement in Solid Earth Geohazards will continue in their current forms. Sincerely, Alexandra Isern Assistant Director Directorate for Geosciences Organizations Directorate for Geosciences (GEO) This document contains information about an active funding opportunity. Publication number: NSF 25-021 Share Share on Facebook Share on X (formerly known as Twitter) Share on LinkedIn Email
+
+### Eligibility Description
+(none)
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [2/20] HHS-NIH11 — Developing novel theory and methods for understanding the genetic architecture of complex human traits (R21 Clinical Trial Not Allowed)
+FOA_ID: 84b6992a-cf10-4238-ba26-680574f61c05
+
+### Program Description
+The goal of this NOFO is to support R21 applications for novel theory and methods development that better delineate how genetic and non-genetic factors contribute to complex trait variation across individuals, families, and populations. Approaches should be interdisciplinary across the natural and social sciences, account for interdependencies across scales of biological, social, and ecological organization, and make extensive use of theory, simulations, and validation using available large-scale datasets
+
+### Eligibility Description
+Other Eligible Applicants include the following: Alaska Native and Native Hawaiian Serving Institutions; Asian American Native American Pacific Islander Serving Institutions (AANAPISISs); Eligible Agencies of the Federal Government; Faith-based or Community-based Organizations; Hispanic-serving Institutions; Historically Black Colleges and Universities (HBCUs); Indian/Native American Tribal Governments (Other than Federally Recognized); Non-domestic (non-U.S.) Entities (Foreign Organizations); Regional Organizations; Tribally Controlled Colleges and Universities (TCCUs) ; U.S. Territory or Possession.
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [3/20] HHS-NIH11 — Limited Competition: International epidemiology Databases to Evaluate AIDS (IeDEA) (U01 Clinical Trial Not Allowed)
+FOA_ID: d4079dde-c5ec-44bd-a285-feeaa61d5b14
+
+### Program Description
+The National Institute of Allergy and Infectious Diseases, with other NIH Institutes and Centers (ICs) Eunice Kennedy Shriver National Institute of Child Health and Human Development (NICHD), Fogarty International Center (FIC), National Cancer Institute (NCI), National Heart, Lung, and Blood Institute (NHLBI), National Institute on Aging (NIA), National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK), National Institute of Mental Health (NIMH), and Office of AIDS Research (OAR), intends to publish a Notice of Funding Opportunity (NOFO) to solicit applications to continue support for the HIV International epidemiology Databases to Evaluate AIDS (IeDEA) Consortium. The consortium is a network of seven (7) geographical defined Regional Cohort Centers (RCC) awards that define their regional research agenda and bring together HIV clinical, research and contextual data to address their geographically focused questions, as well as global IeDEA research priorities. Collectively these data are used to understand, inform and guide the response to the HIV epidemic. Further, IeDEA facilitates access to data by working with data consumers at the clinic, national, and global level and creating data tools to strengthen data quality and facilitate data analysis. This NOFO will utilize the U01 activity code. Applications are not being solicited at this time. This Notice is being provided to allow potential applicants sufficient time to develop meaningful collaborations and responsive projects. Investigators with expertise and insights into this area of HIV epidemiology are encouraged to begin to consider applying for this new NOFO.
+
+### Eligibility Description
+Non-domestic (non U.S.) Entity (Foreign Organization)This limited competition is open to the following organizations/institutions only. Only renewal applications from the current IeDEA Regional Data Centers may be submitted in response to this NOFO:Foundation for AIDS Research (New York, NY) Indiana University (Indianapolis, IN)Johns Hopkins University (Baltimore, MD)Université de Bordeaux - ISPED (France)Vanderbilt University Medical Center (Nashville, TN)University of Bern (Switzerland)Albert Einstein College of Medicine (New York, NY)
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [4/20] HHS-NIH11 — Accelerating the Pace of Substance Use Research Using Existing Data (R21 Clinical Trial Not Allowed)
+FOA_ID: b31deed0-c999-43a4-919b-d3ba4198ab77
+
+### Program Description
+The purpose of this notice of funding opportunity (NOFO) is to invite applications proposing the innovative analysis of existing social science, behavioral, administrative, and neuroimaging data to study the etiology and epidemiology of drug using behaviors (defined as alcohol, tobacco, prescription and other drug) and related disorders, prevention of drug use and HIV, and health service utilization. This FOA encourages the analyses of public use and other extant community-based or clinical datasets to their full potential in order to increase our knowledge of etiology, trajectories of drug using behaviors and their consequences including morbidity and mortality, risk and resilience in the development of psychopathology, strategies to guide the development, testing, implementation, and delivery of high quality, effective and efficient services for the prevention and treatment of drug abuse and HIV.
+
+### Eligibility Description
+Other Eligible Applicants include the following: Alaska Native and Native Hawaiian Serving Institutions; Asian American Native American Pacific Islander Serving Institutions (AANAPISISs); Eligible Agencies of the Federal Government; Faith-based or Community-based Organizations; Hispanic-serving Institutions; Historically Black Colleges and Universities (HBCUs); Indian/Native American Tribal Governments (Other than Federally Recognized); Non-domestic (non-U.S.) Entities (Foreign Organizations); Regional Organizations; Tribally Controlled Colleges and Universities (TCCUs) ; U.S. Territory or Possession.
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [5/20] HHS-NIH11 — Emergency Competitive Revision to Existing NIH Awards (Emergency Supplement - Clinical Trial Optional)
+FOA_ID: 4f0993e2-337a-4201-8d43-2732bee5e46a
+
+### Program Description
+The National Institutes of Health (NIH) hereby notify the applicant community that funds may be available for applications based on a presidentially declared disaster under the Stafford Act, a public health emergency declared by the Secretary, HHS, or other local, regional or national disaster. Applications in response to Emergency Notices of Special Interest (NOSIs) will be routed directly to the NIH awarding component signed on to the Emergency NOSI. Only applications submitted in response to an Emergency NOSI published by an IC will be allowed to apply to this NOFO.
+
+### Eligibility Description
+Other Eligible Applicants include the following: Alaska Native and Native Hawaiian Serving Institutions; Asian American Native American Pacific Islander Serving Institutions (AANAPISISs); Eligible Agencies of the Federal Government; Faith-based or Community-based Organizations; Hispanic-serving Institutions; Historically Black Colleges and Universities (HBCUs); Indian/Native American Tribal Governments (Other than Federally Recognized); Non-domestic (non-U.S.) Entities (Foreign Organizations); Regional Organizations; Tribally Controlled Colleges and Universities (TCCUs) ; U.S. Territory or Possession.
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [6/20] HHS-NIH11 — Stroke Preclinical Assessment Network (SPAN) to Support Translational Studies for Acute Cerebroprotection – Network Sites and Coordinating Center (U01- CT Not Allowed)
+FOA_ID: 8fcce4bb-732f-4bc4-8024-09202b0e1d42
+
+### Program Description
+The National Institute of Neurological Disorders and Stroke intends to publish a Notice of Funding Opportunity (NOFO) to solicit applications for the Coordinating Center and Testing Sites of the Stroke Preclinical Assessment Network (SPAN), a preclinical network to support translational studies for cerebroprotection in experimental models of acute ischemic stroke . Applications are not being solicited at this time. Notice is being provided to allow potential applicants sufficient time to develop meaningful collaborations and responsive projects. This NOFO will utilize Cooperative Agreements (U01). Investigators with expertise and insights into this area of multi-center translational studies for acute cerebroprotection in experimental models of acute ischemic stroke are encouraged to begin to consider applying for this NOFO. SPAN 3.0 will be a collaborative network for the preclinical testing of stroke treatments comprised of up to 6 peer-reviewed data collection sites that emphasize rigor with built-in replication and a Coordinating Center (CC) that will oversee administration, coordination, and data sharing of the network.
+
+### Eligibility Description
+Other Eligible ApplicantsIndian/Native American Tribal Governments (Other than Federally Recognized);Eligible Agencies of the Federal Government;U.S. Territory or Possession;Faith-based or Community-based Organizations;Regional Organizations;Non-domestic (non-U.S.) Entities (Foreign Institutions).
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [7/20] HHS-NIH11 — Assay Validation of High Quality Markers for Clinical Studies in Cancer (UH3 Clinical Trials Not Allowed)
+FOA_ID: aaddfd8c-1c4a-4491-bbd4-ebbae60dd440
+
+### Program Description
+Through this Notice of Funding Opportunity (NOFO), the National Cancer Institute (NCI) intends to accelerate the adoption and validation of molecular/cellular/imaging markers (referred to as "markers" or "biomarkers") and assays for cancer detection, diagnosis, prognosis, monitoring, and prediction of response or resistance to treatment, as well as markers for cancer prevention and control. This NOFO will also support the validation of pharmacodynamic markers and markers of toxicity. Applicants to this NOFO must have an assay(s) whose performance has been analytically validated in specimens similar to those for the intended clinical use of the marker(s) and assay(s). As chemotherapies and/or radiation therapies are increasingly combined with immunotherapies to enhance the durability of anti-cancer responses, assays for measuring multiple markers, including immune markers, can be developed and validated simultaneously. The UH3 mechanism will support the clinical validation of established assays for up to 3 years using specimens from retrospective or prospective clinical trials or studies. This NOFO may be used to validate existing assays for use in other trials, observational studies, or population studies. Efforts to harmonize clinical laboratory tests, including investigation into the performance and reproducibility of assays across multiple clinical laboratories, are also appropriate for this funding opportunity. Projects proposed for this NOFO will require multi-disciplinary interaction and collaboration among scientific investigators, oncologists, statisticians, and clinical laboratory scientists. This NOFO is not intended to support early-stage development of technology or the conduct of clinical trials but is intended for validation of assays to the point where they could be integrated into clinical trials/studies as investigational assays.
+
+### Eligibility Description
+Other Eligible Applicants include the following: Alaska Native and Native Hawaiian Serving Institutions; Asian American Native American Pacific Islander Serving Institutions (AANAPISISs); Eligible Agencies of the Federal Government; Faith-based or Community-based Organizations; Hispanic-serving Institutions; Historically Black Colleges and Universities (HBCUs); Indian/Native American Tribal Governments (Other than Federally Recognized); Non-domestic (non-U.S.) Entities (Foreign Organizations); Regional Organizations; Tribally Controlled Colleges and Universities (TCCUs) ; U.S. Territory or Possession; Non-domestic (non-U.S.) Entities (Foreign Organizations) are not eligible to apply. Non-domestic (non-U.S.) components of U.S. Organizations are not eligible to apply. Foreign components, as defined in the NIH Grants Policy Statement, are allowed.
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [8/20] DOD-AMRAA — DoW Traumatic Brain Injury and Psychological Health, Health Services Research Award
+FOA_ID: e7677857-5d05-457f-9ad0-76eb030c9931
+
+### Program Description
+Summary: The fiscal year 2026 (FY26) Traumatic Brain Injury and Psychological Health Research Program (TBIPHRP) Health Services Research Award (HSRA) intends to fund high-impact research that bridges the gap between research, practice and policy by building real-world evidence on how interventions, clinical practices/guidelines, or policies can be deployed to targeted populations at the appropriate time. In order to meet this intent, the mechanism supports health services research approaches. Distinctive Features: · The HSRA will support health services research approaches that include comparative effectiveness research; implementation of interventions, diagnostics and clinical practices/guidelines; and validation of data science insights. · Applications must include clinical research or clinical trials . Prospective or retrospective clinical research or clinical trials involving human subjects, human subject data/records, and human anatomical substances are allowed. · Preliminary data are required. · Basic, preclinical and animal research are prohibited. · For research prospectively enrolling human subjects, inclusion of community-based participatory research (CBPR) approaches is required. · Early-Career Investigator Partnering Option : This option accommodates two Principal Investigators (PIs), one of which is an Early-Career Investigator. If recommended for funding, each PI will receive a separate award.
+
+### Eligibility Description
+(none)
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [9/20] DOD-AMRAA — DoW Melanoma Research Program Focused Program Award – Rare Melanomas
+FOA_ID: 64066092-3cea-4f17-aa66-87de55c89688
+
+### Program Description
+Summary: The fiscal year 2026 (FY26) Melanoma Research Program (MRP) Focused Program Award – Rare Melanomas, supports a multidisciplinary research program of at least two, but not more than three, distinct but complementary research projects addressing an overarching question relevant to rare melanomas. Distinctive Features: · *Updated for FY26* Investigators must include at least one rare melanoma survivor or patient advocate as part of the project team who will provide advice and consultation throughout planning, implementation, and results dissemination to maximize research impact. · This is a partnering mechanism, requiring an Initiating Principal Investigator (PI) and at least one, but not more than two, Partnering PIs, see Figure 1 . Each named PI is expected to be a Project Leader for one of the proposed research projects. If recommended for funding, each PI will be named on separate awards to the recipient organization(s). · After submitting the required pre-application, investigators must receive an invitation to submit a full application . Only the Initiating PI will submit a pre-application. All PIs must submit full applications. The Partnering PI(s)’s application is an abbreviated package specific to their proposed research project. · Clinical trials are allowed.
+
+### Eligibility Description
+(none)
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [10/20] HHS-FDA — Federal and University Partnership to Improve the Safety of Seafood from the Gulf of America
+FOA_ID: c6321146-1cc3-4a91-b3d8-8fa86624d4e9
+
+### Program Description
+FDA is announcing the availability of funds for the support of a cooperative agreement between the Human Food Program/ Office of Laboratory Operations and Applied Science (OLOAS)/ Office of Applied Microbiolgy and Technology (OAMT) and the Marine Environmental Sciences Consortium/Dauphin Island Sea Lab (DISL). The scientific, public health, and policy expertise within the Food and Drug Administration (FDA) will provide opportunities for collaborations that support the Dauphin Island Sea Lab (DISL) mission. The DISL's nationally ranked programs, leading-edge research collaborations, and innovative business partnerships provide an environment to support diverse multidisciplinary exchanges with FDA. These joint efforts will provide the basis for development of scientific collaborations, outreach, educational initiatives and intellectual partnerships between FDA and DISL.
+
+### Eligibility Description
+Only the following applicant is eligible to apply for this single source funding: Marine Environmental Science Consortium - Dauphin Island Sea Lab
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [11/20] HHS-FDA — Identification of Drug-related and Formulation-Related Factors that Result in Alcohol Dose Dumping of Modified Release Oral Drug Products (U01) Clinical Trial Not Allowed
+FOA_ID: b3df7aad-4bfc-4dd1-9fe0-fd4264e9a4a6
+
+### Program Description
+Modified release (MR) oral drug products are considered to have a high risk for alcohol dose dumping (ADD) because they contain large quantities of drug(s), designed to release over a prolonged period of time. Accidental exposure of these products to alcohol can result in the relatively rapid release of large quantities of drug with severe side effects, including death. To mitigate this risk, the FDA recommends conducting an in vitro alcohol dose dumping assessment in 0%, 5%, 20%, and 40% alcoholic dissolution media for all prospective generic versions of MR oral drug products. To date, ADD assessments have not been harmonized globally. For instance, the U.S. FDA recommends testing up to 40% alcoholic media while the European Medicines Agency recommends testing up to 20% alcoholic media. This type of difference can present a challenge for formulators designing products for multiple markets, as historical data has shown release from MR oral products do not always follow a linear response (either increasing or decreasing) to increasing alcohol concentrations. In addition, interpretation of an ADD assessment may be limited by the inability of the test to predict in vivo behavior. The purpose of this research is to develop tools that 1) facilitate the development of MR generic drug products that have a low potential for ADD, 2) support regulatory decision making during the assessment of such products, and 3) provide evidence that enables FDA to develop more specific recommendations for efficiently demonstrating a low or comparative potential of alcohol dose dumping for MR oral drug products containing high risk drugs.
+
+### Eligibility Description
+Applicant organizations may submit more than one application, provided that each application is scientifically distinct. The FDA will not accept duplicate or highly overlapping applications under review at the same time per 2.3.7.4 Submission of Resubmission Application. This means that the NIH or FDA will not accept:•A new (A0) application that is submitted before issuance of the summary statement from the review of an overlapping new (A0) or resubmission (A1) application.•A resubmission (A1) application that is submitted before issuance of the summary statement from the review of the previous new (A0) application.•An application that has substantial overlap with another application pending appeal of initial peer review (see 2.3.9.4 Similar, Essentially Identical, or Identical Applications).
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [12/20] HHS-CDC-HHSCDCERA — Preventing Suicide and Interpersonal Violence Among Youth and Young Adults
+FOA_ID: 3d11007c-508d-4beb-b192-b3ff8fc3d67d
+
+### Program Description
+The Centers for Disease Control and Prevention's (CDC) National Center for Injury Prevention and Control (NCIPC) seeks investigator-initiated research proposals to evaluate primary prevention-focused approaches to reduce suicide and interpersonal violence among youth and young adults (ages 10 to 24 years). This NOFO will support the evaluation of existing primary prevention approaches (i.e., approaches that are already developed and implemented or have been shown to be ready for implementation) that have not yet undergone rigorous evaluation. For this announcement, "approaches" can include programs, policies, or practices. Applicants can propose to evaluate approaches that: Reduce suicide-related outcomes, enhancing social connectedness and social cohesion at the community level Reduce or mitigate the impact of unhealthy behaviors or experiences in online spaces on suicide-related outcomes Evaluate approaches to reduce the incidence and/or harm caused by technology-facilitated forms of interpersonal violence
+
+### Eligibility Description
+Additional eligibility information to be included in the NOFO.
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [13/20] HHS-HRSA — Infant-Toddler Court Program–State Awards
+FOA_ID: c0143692-35ff-4153-b0c3-e85df5ab6b67
+
+### Program Description
+The Infant-Toddler Court Program (ITCP) State Awards allow states and communities to support and expand use of enhanced child welfare practices in communities across the country that bring together courts, social services, and families to improve the safety, healthy development, and nurturing relationships of families with young children involved with child welfare. The ITCP State Awards support implementation of the evidence-based ITC approach in targeted communities. Awardees ensure successful implementation and expansion by spreading lessons learned to local teams in the state, tracking program outcomes, and training local ITC teams.
+
+### Eligibility Description
+Any domestic public or private entity, including an Indian tribe or tribal organization (as those terms are defined at 25 U.S.C. 5304) (formerly cited as 25 U.S.C. 450b)) is eligible to apply. See 42 CFR § 51a.3(a). Domestic faith-based and community-based organizations are also eligible to apply. If funded, for-profit organizations are prohibited from earning profit from the federal award (see 2 CFR 200 §400(g)).
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [14/20] HHS-HRSA — Fiscal Year (FY) Service Area Competition (SAC)
+FOA_ID: b9e9e8b6-a7c0-48d1-bbdc-eb6568e4f597
+
+### Program Description
+The FY 2027 Health Center Program Service Area Competition (SAC) funding improves the health of medically underserved communities and populations by providing grants to support the delivery of comprehensive, high-quality preventive and primary health care services in the United States and its territories. For each SAC Notice of Funding Opportunity (NOFO), service areas available for competition are announced in the Service Area Announcement Table (SAAT). Throughout the year, we may announce additional service areas in a Service Area Competition-Additional Area (SAC-AA) if an awarded health center cannot continue to provide services in the funded service area.
+
+### Eligibility Description
+(none)
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [15/20] DOS-DRL — Global Documentation for Accountability Initiative
+FOA_ID: a359d09c-7ea4-4e81-9809-904cd5084982
+
+### Program Description
+This global program will support the documentation of human rights violations and abuses and transform this information into credible, actionable, policy-relevant data that can support U.S. and allied sanctions, visa restrictions, law enforcement, DRL’s annual Human Rights Reports, diplomatic engagement, and other accountability measures. By improving the volume, quality, accessibility, and analytical use of locally generated information that meets the evidentiary standards used by the United States and U.S. allies for human rights-based sanctions, visa restrictions, and other accountability tools, the program addresses critical gaps that limit the operational use of documentation efforts and enables burden‑sharing.
+
+### Eligibility Description
+The following organizations are eligible to apply: • Not-for-profit organizations, including think tanks and civil society/non-governmental organizations (U.S.-based and foreign-based) • Public and private educational institutions • For-profit organizations or businesses
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [16/20] DOI-FWS — F24AS00298 Cooperative Agriculture
+FOA_ID: 8c99566c-3e0f-4f63-8840-4c35c7526b23
+
+### Program Description
+The objectives for the use of cooperative agriculture in the National Wildlife Refuge System (NWRS) are: production or modification of specific cover types or growing methods that meet the life history requirements of species for which we have established objectives (e.g., waterfowl production); production of foods for wildlife species for which we have established objectives; and/or maintenance, rehabilitation, or reestablishment of natural habitat. Cooperative agriculture is when a person or entity conducts agricultural practices on NWRS lands in support of the Service’s conservation and resource management objectives and there is substantial involvement between the Service and that person or entity. The NWRS uses cooperative agreements, known as Cooperative Agriculture Agreements (CAAs), as the legal instruments to formalize the agreement between the Service and the program participant. The cost-sharing of a person or entity in cooperative agricultural on NWRS lands can vary depending on the needs and objectives of the particular NWRS land. For example, the Service may provide the cooperator with the right to perform agricultural practices on NWRS land and a percentage of any resulting crop yield, as well as the ability to use Service water, equipment, and/or refuge staff. In exchange, the cooperator may provide the Service with labor, equipment, and materials; a percentage of any resulting crop yield; and/or maintenance, rehabilitation, or reestablishment of specific habitat conditions on NWRS lands. In addition to or instead of cost-sharing, the Service may accept bids for payment for the person or entity’s agriculture use (e.g. haying or grazing) on NWRS lands in compliance with the Refuge Revenue Sharing Act. This is a nonfinancial assistance program. No Federal funds are obligated or awarded to program participants. Because a CAA is not a financial assistance award, it is not subject to the regulations at 2 CFR 200 or policy in parts 515 and 516 of the Fish and Wildlife Service Manual.
+
+### Eligibility Description
+Applicants must be private individuals or small business entities. Pre-application coordination is required. Environmental impact information is not required for this program. This program is eligible for coverage under E.O. 12372, "Intergovernmental Review of Federal Programs." An applicant should consult the office or official designated as the single point of contact in his or her State for more information on the process the State requires to be followed in applying for assistance, if the State has selected the program for review.
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [17/20] USDA-NIFA — Agriculture and Food Research Initiative Competitive Grants Program Education and Workforce Development
+FOA_ID: b666fbf8-3998-42ee-a1e4-c20d53d9299d
+
+### Program Description
+The Agriculture and Food Research Initiative - Education and Workforce Development (EWD) focuses on developing the next generation of research, education, and extension professionals in the food and agricultural sciences. The National Institute of Food and Agriculture (NIFA) requests applications for the AFRI’s Education and Workforce Development program areas to support: 1. professional development opportunities for K-14 educational professionals; 2. non-formal education that cultivates food and agricultural interest in youth; 3. workforce training at community, junior, and technical colleges; 4. training of undergraduate students in research and extension; 5. fellowships for predoctoral candidates; 6. fellowships for postdoctoral scholars; and 7. education and workforce development workshop grants.
+
+### Eligibility Description
+Eligibility Requirements - Applicants for AFRI must meet all the requirements discussed in this NOFO. Failure to meet the eligibility criteria by the application deadline may result in exclusion from consideration or preclude NIFA from making an award. For those new to Federal financial assistance, NIFA’s About Grants provides highly recommended information about grants and other resources to help understand the Federal awards process. Eligibility is linked to the project type as specified below.1. Research, Education, or Extension Projects Eligible applicants for single-function Research, Education or Extension Projects include:a) State Agricultural Experiment Station;b) colleges and universities (including junior colleges offering associate degrees or higher);c) university research foundations;d) other research institutions and organizations;e) Federal agencies;f) national laboratories;g) private organizations or corporations;h) individuals who are U.S. citizens, nationals, or permanent residents; andi) any group consisting of two or more entities identified in a) through h).Eligible institutions do not include foreign and international organizations.2. Integrated ProjectsEligible applicants for Integrated Projects include: a) colleges and universities;b) 1994 Land-Grant Institutions; andc) Hispanic-serving agricultural colleges and universities (see NIFA’s Hispanic-Serving Agricultural Colleges and Universities page).For item a) under Integrated Projects, the terms “college” and “university” mean an educational institution in any state which: a) admits as regular students only persons having a certificate of graduation from a school providing secondary education, or the recognized equivalent of such a certificate; b) is legally authorized within such state to provide a program of education beyond secondary education; c) provides an educational program for which a bachelor’s degree or any other higher degree is awarded; d) is a public or other nonprofit institution; and e) is accredited by a nationally recognized accrediting agency or association. A research foundation maintained by a college or university is eligible to receive an award under this program.3. Food and Agricultural Science Enhancement GrantsPart II, C.2 contains the eligibility details for Food and Agricultural Science Enhancement (FASE) Grants. Note that under FASE opportunity, only Strengthening Standard, Predoctoral Fellowship Grants, Postdoctoral Fellowship Grants, and Strengthening Workshop are solicited in this NOFO.Applicants must respond to the Program Area Priorities and deadlines found in Part I, C. Grant recipients may subcontract to organizations not eligible to apply provided such organizations are necessary for the conduct of the project. Failure to meet an eligibility criterion by the application deadline may result in the application being excluded from consideration or, even though an application may be reviewed, will preclude NIFA from making an award (see Part III, B).USDA will not accept competitive applications for grants and cooperative agreements submitted for due dates after June 20, 2025, and/or research and development (R&D) contract proposals submitted to solicitations issued after June 20, 2025, for dangerous gain-of-function research, as defined in Section 8 of E.O. 14292.
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [18/20] VA-HPGPDP — GPD Grant Forecast
+FOA_ID: d465a6a3-8fb4-495c-815e-982c48296c63
+
+### Program Description
+THIS IS NOT A NOTICE OF FUNDING. THIS IS A GENERAL FORECAST ONLY. Grant and Per Diem (GPD) Program Introduction The GPD Program is VA’s largest transitional housing program for Veterans experiencing homelessness and is permanently authorized under Public Law 109-461. Since 1994, the GPD Program has awarded grants to community-based organizations to provide transitional housing with wraparound supportive services to assist vulnerable Veterans move into permanent housing. The grants are designed to meet Veterans at various stages as they move to stable housing. Community-based organizations receiving GPD grants offer focused transitional housing services through a variety of housing models targeted to different populations and needs of Veterans. The GPD program plays a vital role in the continuum of homeless services by providing supportive services to those Veterans who would otherwise be among the unsheltered homeless population. The result of GPD programs is that Veterans achieve residential stability, increase their skill levels and/or income, and obtain greater self-determination. Types of GPD Grants Transitional housing grants: Per Diem Only (PDO) grants provide funding in the form of per diem payments to reimburse grantees for the cost of care provided to Veterans in transitional supportive housing. Special Need grants target housing and services to specific populations of Veterans (e.g., women, Veterans with chronic mental illness, frail elderly Veterans, Veterans caring for minor dependents, terminally ill Veterans). Transition-In-Place (TIP) grants offer Veteran residents housing in which supportive services transition out of the residence over time, rather than the resident. Upon completion of the TIP services, the resident retains the unit as their permanent housing with no requirement to move. Other types of grants: Case Management grants support Veterans who were previously experiencing homelessness or who are at risk for homelessness so that they may obtain or retain permanent housing. Capital grants support the costs of acquiring, renovating, or constructing facilities and are only offered intermittently to improve existing facilities or to develop new transitional housing depending on VA's priorities and funding availability. Lists of current grantees are available on the GPD website . How to Apply for GPD Funding Not all grant types are available annually. When available, notices of funding can be found at the following locations: www.grants.gov and https://www.va.gov/homeless/gpd.asp . Application instructions are provided in each notice of funding. Each notice of funding will clarify specific eligibility criteria, application requirements, funding limitations, and other requirements. Applications are submitted through an online portal that is only available when there is an open notice of funding. Potential applicants who wish to see what was required for previous applications may review past notices of funding, available on the GPD provider website and www.grants.gov . Past notices of funding are not a guarantee of future requirements. Tentative Estimated GPD Award Schedule Specific dates are not able to be forecast. The follow tentative approximations are provided for general planning purposes. FY 2026 Case Management – GPD tentatively expects to offer a notice of funding around FY 2025 for case management awards starting approximately in FY 2026. FY 2027 PDO – GPD tentatively expects to offer a notice of funding around FY 2026 for PDO awards starting approximately in FY 2027. TIP – GPD tentatively expects to offer a notice of funding around FY 2026 for TIP awards starting approximately in FY 2027. FY 2028 GPD tentatively does not expect to offer a notice of funding for this timeframe. GPD may update this forecast closer to the time. THIS IS NOT A NOTICE OF FUNDING. THIS IS A GENERAL FORECAST ONLY.
+
+### Eligibility Description
+THIS IS NOT A NOTICE OF FUNDING. THIS IS A GENERAL FORECAST ONLY.
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [19/20] NASA-HQ — ROSES 2025: A.4 Rapid Response and Novel Research in Earth Science
+FOA_ID: 4d0f8fb3-25ba-4819-9785-1a0c546cd609
+
+### Program Description
+This program element does not have a proposal due date. Proposals may be submitted at any time, pending certain eligibility timing issues related to resubmissions and duplicate proposal avoidance, see the program element text and appropriate overview appendix (e.g., B.1 or C.1). The date shown of 8/31/2026 is the last day that proposals may be submitted subject to the ROSES-25 rules and the current GCAM. The ROSES-26 version of this program element is planned to overlap with this ROSES-25 version by a few weeks, allowing continuous submission of proposals across ROSES years. NOTICE: Research security training required starting August 5, 2026. All PIs and any Co-Is that would spend ≥ 10% time on a proposed grants or cooperative agreements must certify they have taken research security training. NASA will be satisfied with the four online research security training modules on the National Science Foundation's (NSF) Research Security Training website at https://www.nsf.gov/research-security/training or the SECURE Center condensed version of the four modules at https://www.secure-center.org/ctm NOTICE: Amended July 2, 2026. This amendment defers the close date for this program element to the end of the calendar year by which the next ROSES with the next RRNES will have been released. NOTICE: March 30, 2026. A new requirement has been added to Section 1 and the point of contact for the NASA flight request system in Section 5.1.1 has been updated. New text is in bold and deleted text is struck through. NOTICE: Amended, January 22, 2026. The last date for submission of proposals in Section 6 has been updated to reflect that ROSES-25 rolling submissions will be open through August 2026. Also, the points of contact have been updated. New text is in bold and deleted text is struck through. ﻿NOTICE: Amended September 22, 2025. This amendment announces that those proposing to Earth Science (ROSES Appendix A) to use the NASA Center for Climate Simulation high-end computing facility must include $0.09/SBU in their budget per the instructions provided in Section 7.3 of ROSES-25 A.1 Earth Science Research Overview . This applies to all open and future program elements in Appendix A (Earth Science) as of 09/22/2025. ﻿This synopsis is a generic summary that is posted for each of the many individual "program elements" in NASA’s Research Opportunities in Space and Earth Sciences (ROSES) – 2025 solicitation. For specific information on this particular program element download and read the PDF of the text of this program element by going to Tables 2 or 3 of ROSES at https://solicitation.nasaprs.com/ROSES2025table2 and https://solicitation.nasaprs.com/ROSES2025table3 , respectively, click the title of the program element of interest, a hypertext link will take you to a page for that particular program element. On that page, on the right side under "Announcement Documents" the link on the bottom will be to the PDF of the text of the call for proposals. For example, if one were interested in the Solar System Science program (NNH25ZDA001N-SCUBED) one would follow the link to the NSPIRES page for that program element and then to read the text of the call one would click on “C.2 Solar System Science (.pdf)” to download the text of the call. If one wanted to set it into the context of the goals, objectives and know the default rules for all elements within Appendix C, the planetary science division, one might download and read “ C.1 Planetary Science Research Program Overview (.pdf) ” from that same page. While the letters and numbers are different for each element within ROSES (A.10, B.3, etc.) the basic configuration is always the same, e.g., the letter indicates the Science Division (A is Earth Science, B is Heliophysics etc.) and whatever the letter, #1 is always the division overview. In 2025, most program elements will be set up for application via Grants.gov only if requested at least 30 days in advance of the due date. For more on Grants.gov submissions see Section IV(b)v of the ROSES Summary of Solicitation, that may be found at https://solicitation.nasaprs.com/ROSES2025 . The National Aeronautics and Space Administration (NASA) Science Mission Directorate (SMD) released its annual omnibus Research Announcement (NRA), Research Opportunities in Space and Earth Sciences (ROSES) – 2025 (OMB Approval Number 2700-0092, CFDA Number 43.001) on February 21, 2025. In this case "omnibus" means that this NRA has many individual program elements, each with its own due dates and topics. All together these cover the wide range of basic and applied supporting research and technology supported by SMD. Awards will be made as grants, cooperative agreements, or contracts depending on the nature of the work proposed. However, most extramural research awards deriving from ROSES will be grants, and many program elements of ROSES specifically exclude contracts, because contracts would not be appropriate for the nature of the work solicited. Funded Co-Is at government labs will receive inter- or intra-agency transfers . The typical period of performance for an award is three years, but some programs may allow up to five years and others specify shorter periods. In most cases, organizations of every type, Government and private, for profit and not-for-profit, domestic and foreign (with some caveats), may submit proposals without restriction on teaming arrangements. Tables listing the program elements and due dates (Tables 2 and 3 ), a table that provides a very top level summary of proposal contents ( Table 1 ), and the full text of the ROSES-2025 "Summary of Solicitation", may all be found NSPIRES at https://solicitation.nasaprs.com/ROSES2025 . Frequently asked questions for ROSES are posted at http://science.nasa.gov/researchers/sara/faqs . Questions concerning specific program elements should be directed to the point(s) of contact for that particular element, who may be found either at the end of the individual program element in the summary table of key information or on the web list of topics and points of contact at: http://science.nasa.gov/researchers/sara/program-officers-list . General questions concerning ROSES-2025 may be directed to the office of the SMD Deputy Associate Administrator for Research at sara@nasa.gov . Not all program elements are known at the time of the release of ROSES. To be informed of new program elements or amendments to this NRA, proposers may subscribe to: (1) The SMD mailing lists (by logging in at http://nspires.nasaprs.com and checking the appropriate boxes under "Account Management" and "Email Subscriptions"), (2) The ROSES-2025 blog feed for amendments, clarifications, and corrections to at https://science.nasa.gov/researchers/solicitations/roses-2025/ , and (3) The ROSES-2025 due date Google calendars (one for each science division). Instructions are at https://science.nasa.gov/researchers/sara/library-and-useful-links (link from the words due date calendar).
+
+### Eligibility Description
+Proposers must be affiliated with an institution at nspires.nasaprs.com/ and, in general, NASA provides funding only to U.S. institutions. Organizations outside the U.S. that propose on the basis of a policy of no-exchange-of-funds; consult the NASA Grant and Cooperative Agreement Manual (GCAM) (https://www.nasa.gov/grants-policy-and-compliance-team/#Regulations) for specific details. Some NRAs may be issued jointly with a non-U.S. organization, e.g., those concerning guest observing programs for jointly sponsored space science programs, that will contain additional special guidelines for non-U.S. participants. Also reference the GCAM for special instructions for proposals from non-U.S. organizations that involve U.S. personnel for whom NASA support is requested.
+
+TAGS: 
+RATIONALE: 
+
+---
+
+## [20/20] USDOJ-OJP-BJA — BJA FY26 Body-Worn Camera Policy and Implementation Program to Support Law Enforcement Agencies
+FOA_ID: 32d2256c-a00e-48aa-a022-ee00023a01b2
+
+### Program Description
+This is a notice of funding opportunity (NOFO) for the BJA FY 2026 Body-Worn Camera Policy and Implementation Program (BWCPIP) to Support Law Enforcement Agencies. This opportunity supports publicly funded law enforcement and correctional agencies for the purchase or lease of body-worn cameras (BWCs) and the development of comprehensive BWC programs. Since its inception, BWCPIP has responded to growing demand for reliable, real-time video evidence in criminal investigations and prosecutions. Law enforcement agencies across the country increasingly rely on BWC footage to enhance evidentiary documentation, improve prosecutorial outcomes, and document public encounters. BWCs also serve as a deterrent to assaults against officers and can help exonerate officers falsely accused of misconduct.
+
+### Eligibility Description
+For this NOFO, “Other Entities” refers to an authorized agency or consortium that acts as an intermediary to assist eligible law enforcement agencies perform law enforcement functions, such as regional or state level authorities, or State Administrating Agencies (SAAs); Other Units of Local Government: This includes towns, boroughs, parishes, villages, or other general purpose political subdivisions of a state; Publicly Funded Law Enforcement Agencies: Law enforcement agencies funded by states, federally-recognized Tribes, or units of local government; Publicly Funded Correctional Agencies: Correctional agencies funded by states, federally-recognized Tribes, or units of local government.
+
+TAGS: 
+RATIONALE: 
+
+---

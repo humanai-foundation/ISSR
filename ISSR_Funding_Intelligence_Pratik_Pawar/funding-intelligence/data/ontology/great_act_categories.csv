@@ -1,0 +1,15 @@
+concept_id,label,category,parent_id,description
+great_01,National Defense,sponsor_theme,,Research supporting national security and defense capabilities
+great_02,Health,sponsor_theme,,Biomedical and public health research including disease prevention and healthcare delivery
+great_03,Space,sponsor_theme,,Space exploration aeronautics and astronomical research
+great_04,Energy,sponsor_theme,,Energy production conservation efficiency and renewable energy research
+great_05,General Science,sponsor_theme,,Fundamental scientific research across natural and physical sciences
+great_06,Natural Resources and Environment,sponsor_theme,,Environmental protection natural resource management and ecosystem research
+great_07,Agriculture,sponsor_theme,,Agricultural sciences food safety nutrition and rural development research
+great_08,Transportation,sponsor_theme,,Transportation systems safety infrastructure and mobility research
+great_09,Education and Training,sponsor_theme,,Education policy workforce development and training program research
+great_10,International Affairs,sponsor_theme,,International development diplomacy foreign assistance and global affairs research
+great_11,Income Security,sponsor_theme,,Social welfare economic security poverty reduction and workforce programs research
+great_12,Veterans Benefits,sponsor_theme,,Veterans health care benefits services and reintegration research
+great_13,Community and Regional Development,sponsor_theme,,Community development urban planning housing and regional economic development research
+great_14,Administration of Justice,sponsor_theme,,Criminal justice law enforcement corrections and public safety research

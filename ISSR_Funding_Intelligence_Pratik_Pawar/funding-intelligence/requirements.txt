@@ -1,0 +1,39 @@
+# ── Core ──
+requests==2.32.3
+feedparser==6.0.11
+python-dotenv==1.0.1
+
+# ── PDF Parsing ──
+pymupdf4llm==0.0.17
+pymupdf==1.25.1
+pdfplumber==0.11.4
+pdfminer.six==20231228
+
+# ── Ingestion ──
+aiohttp==3.13.5
+
+# ── Web Scraping ──
+pyyaml==6.0.2
+playwright==1.49.1
+beautifulsoup4==4.12.3
+
+# ── NLP & Tagging ──
+spacy==3.7.5
+sentence-transformers==3.3.1
+nltk==3.9.1
+
+# ── Schema & Validation ──
+jsonschema==4.23.0
+
+# ── Vector Search ──
+faiss-cpu>=1.9.0
+numpy==1.26.4
+
+# ── Data Processing ──
+pandas==2.2.3
+
+# ── API Server ──
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.13.4
+starlette==0.41.3

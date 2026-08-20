@@ -1,0 +1,9 @@
+You are an expert federal grant reviewer. Read the following excerpt from a Funding Opportunity Announcement (FOA).
+FOA Text:
+{foa_text}
+
+Which of these two semantic categories is the MOST accurate classification for this FOA?
+A: {candidate_a}
+B: {candidate_b}
+
+Respond with a JSON object of the form {{"winner": "A"}} or {{"winner": "B"}}. Do not output anything else.

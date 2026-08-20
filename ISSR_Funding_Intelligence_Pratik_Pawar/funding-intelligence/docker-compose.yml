@@ -1,0 +1,51 @@
+services:
+  # The main application containing the API and CLI tools
+  issr-app:
+    build: .
+    container_name: issr-funding-intel
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./src:/app/src
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - API_RELOAD=true
+      - API_CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - ENABLE_LAYER3_LLM=false  # Set to true if running Ollama locally
+      - SQLITE_DB_PATH=data/queues/nsf_queue.db
+      - APP_DB_PATH=data/db/funding_intelligence.db
+    command: uvicorn foa_pipeline.api.app:app --host 0.0.0.0 --port 8000 --reload
+
+  # Next.js frontend (web/) -- runs as its own server, a separate origin from
+  # the API. NEXT_PUBLIC_API_BASE_URL is a build ARG (see web/Dockerfile):
+  # it's inlined into the client bundle at `next build` time, so setting it
+  # only here as a runtime env var would not reach browser code.
+  web:
+    build:
+      context: ./web
+      args:
+        NEXT_PUBLIC_API_BASE_URL: http://localhost:8000
+    container_name: issr-funding-intel-web
+    ports:
+      - "3000:3000"
+    environment:
+      # Server-only: Server Component fetches use this Docker-internal URL,
+      # server-to-server, no CORS involved.
+      - API_BASE_URL=http://issr-app:8000
+    depends_on:
+      - issr-app
+
+  # Optional: Ollama service for Layer 3 tagging if you want it dockerized instead of host-installed
+  # ollama:
+  #   image: ollama/ollama
+  #   container_name: issr-ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama_data:/root/.ollama
+
+volumes:
+  ollama_data:

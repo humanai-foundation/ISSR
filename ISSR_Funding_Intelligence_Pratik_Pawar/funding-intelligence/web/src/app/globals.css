@@ -1,0 +1,163 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
+  --font-wordmark: var(--font-wordmark);
+  --color-status-open: var(--status-open);
+  --color-status-closed: var(--status-closed);
+  --color-status-forecasted: var(--status-forecasted);
+  --color-primary-hover: var(--primary-hover);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/*
+ * ISSR (issr.ua.edu) brand tokens, confirmed from their live theme CSS
+ * (Bootstrap 5-based): --bs-primary: #9E1B32 (rgb 158,27,50), the same value
+ * used for --bs-link-color, i.e. University of Alabama's official crimson.
+ * Hover/darker variant #7e1628 also confirmed from their --bs-btn-active-bg.
+ * Body text #373B41 (charcoal, not pure black) and light surfaces
+ * #EDF0F3 / #E0E2E6 come from their --bs-body-color / --bs-secondary-bg-subtle.
+ *
+ * Status colors (open/closed/forecasted) are functional, not brand -- kept
+ * as plain green/red/amber, unchanged between light and dark, same as the
+ * app they're carried over from.
+ */
+:root {
+  --background: oklch(1 0 0);
+  --foreground: #373b41;
+  --card: oklch(1 0 0);
+  --card-foreground: #373b41;
+  --popover: oklch(1 0 0);
+  --popover-foreground: #373b41;
+  --primary: #9e1b32;
+  --primary-foreground: #ffffff;
+  --primary-hover: #7e1628;
+  --secondary: #edf0f3;
+  --secondary-foreground: #373b41;
+  --muted: #edf0f3;
+  --muted-foreground: #6b7280;
+  --accent: #e0e2e6;
+  --accent-foreground: #373b41;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #e0e2e6;
+  --input: #e0e2e6;
+  --ring: #9e1b32;
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.5rem;
+  --status-open: #10b981;
+  --status-closed: #ef4444;
+  --status-forecasted: #f59e0b;
+  --sidebar: #edf0f3;
+  --sidebar-foreground: #373b41;
+  --sidebar-primary: #9e1b32;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e0e2e6;
+  --sidebar-accent-foreground: #373b41;
+  --sidebar-border: #e0e2e6;
+  --sidebar-ring: #9e1b32;
+}
+
+.dark {
+  /* issr.ua.edu is light-only, so dark mode has no source to copy directly.
+   * The brand crimson (#9e1b32) is kept IDENTICAL to :root's by deliberate
+   * choice, not derived/lightened -- previously this was a lightened pink
+   * (#e08a9b) for AA text contrast against the dark background (raw crimson
+   * as small text here is ~2.3:1, below the 4.5:1 AA minimum). Every
+   * text-primary usage in the app (badges, labels, links) inherits that
+   * tradeoff now that the token is unified; the color reads correctly on
+   * every *filled* primary surface (buttons, active nav, badges -- all
+   * paired with primary-foreground) either way. */
+  --background: #14171c;
+  --foreground: #e5e7eb;
+  --card: #1c2027;
+  --card-foreground: #e5e7eb;
+  --popover: #1c2027;
+  --popover-foreground: #e5e7eb;
+  --primary: #9e1b32;
+  --primary-foreground: #ffffff;
+  --primary-hover: #7e1628;
+  --secondary: #262b33;
+  --secondary-foreground: #e5e7eb;
+  --muted: #262b33;
+  --muted-foreground: #9aa1ab;
+  --accent: #2f3540;
+  --accent-foreground: #e5e7eb;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: #9e1b32;
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --status-open: #10b981;
+  --status-closed: #ef4444;
+  --status-forecasted: #f59e0b;
+  --sidebar: #1c2027;
+  --sidebar-foreground: #e5e7eb;
+  --sidebar-primary: #9e1b32;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #2f3540;
+  --sidebar-accent-foreground: #e5e7eb;
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: #9e1b32;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://issr.ua.edu/foa/schema/v1.0",
+  "title": "ISSR FOA Record",
+  "type": "object",
+  "required": [
+    "schema_version", "foa_id", "source", "source_id", "title",
+    "ingestion_date", "status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "foa_id": {
+      "type": "string",
+      "description": "Internal unique ID (UUID4)"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["grants_gov", "nsf_scraper", "pdf_upload"]
+    },
+    "source_id": {
+      "type": "string",
+      "description": "Original ID from source system"
+    },
+    "source_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agency": {
+      "type": ["string", "null"],
+      "description": "Funding agency name"
+    },
+    "agency_code": {
+      "type": ["string", "null"],
+      "description": "Agency code (e.g., NSF, HHS, DOE)"
+    },
+    "opportunity_number": {
+      "type": ["string", "null"],
+      "description": "Official FOA number"
+    },
+    "cfda_numbers": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "CFDA/Assistance Listing numbers"
+    },
+    "posted_date": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "ISO 8601 date"
+    },
+    "close_date": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "ISO 8601 date, null if rolling/continuous"
+    },
+    "archive_date": {
+      "type": ["string", "null"],
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["open", "closed", "forecasted", "archived"]
+    },
+    "funding_instrument": {
+      "type": ["string", "null"],
+      "enum": ["grant", "cooperative_agreement", "procurement_contract", "other", null]
+    },
+    "award_floor": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "description": "Minimum award amount in USD"
+    },
+    "award_ceiling": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "description": "Maximum award amount in USD"
+    },
+    "expected_awards": {
+      "type": ["integer", "null"],
+      "minimum": 0
+    },
+    "estimated_funding": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "description": "Total estimated program funding in USD"
+    },
+    "eligibility": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Eligible applicant types"
+    },
+    "program_description": {
+      "type": ["string", "null"],
+      "description": "Full program description text"
+    },
+    "eligibility_description": {
+      "type": ["string", "null"],
+      "description": "Full eligibility description text"
+    },
+    "additional_info": {
+      "type": ["string", "null"],
+      "description": "Supplementary information from PDF or HTML"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["tag_id", "label", "category", "source_layer", "confidence"],
+        "properties": {
+          "tag_id": { "type": "string" },
+          "label": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": ["research_domain", "method", "population", "sponsor_theme"]
+          },
+          "source_layer": {
+            "type": "string",
+            "enum": ["layer_1_terminological", "layer_2_embedding", "layer_3_llm"]
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1.0
+          },
+          "context_snippet": {
+            "type": "string"
+          },
+          "ontology_concept_id": {
+            "type": ["string", "null"]
+          }
+        }
+      }
+    },
+    "ingestion_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "raw_payload": {
+      "type": "object",
+      "description": "Original unmodified payload from source"
+    }
+  }
+}

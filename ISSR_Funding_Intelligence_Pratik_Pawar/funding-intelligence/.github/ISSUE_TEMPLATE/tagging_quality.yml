@@ -1,0 +1,53 @@
+name: Tagging quality issue
+description: A tag is wrong, missing, or misleading
+labels: ["tagging-quality"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for accuracy problems rather than crashes. Concrete examples are
+        far more useful than general impressions — they become evaluation cases.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of problem
+      options:
+        - False positive (a tag was applied that shouldn't be)
+        - False negative (an expected tag was missing)
+        - Wrong category or concept
+        - Confidence score looks wrong
+    validations:
+      required: true
+
+  - type: input
+    id: concept
+    attributes:
+      label: Concept involved
+      placeholder: "e.g. method_25 (Citizen Science)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: foa
+    attributes:
+      label: FOA and triggering text
+      description: >
+        The FOA title (or foa_id) and the text that triggered the tag. The
+        `context_snippet` from `data/evaluation/false_positives.json` is ideal.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened, and why?
+      description: Cite the inclusion criteria in Documentation/ONTOLOGY.md where relevant.
+    validations:
+      required: true
+
+  - type: input
+    id: layer
+    attributes:
+      label: Source layer (if known)
+      placeholder: "layer_1_terminological / layer_2_embedding / layer_3_llm"

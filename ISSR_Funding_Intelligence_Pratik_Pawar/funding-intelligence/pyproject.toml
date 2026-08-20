@@ -1,0 +1,46 @@
+[project]
+name = "issr-funding-intelligence"
+version = "1.0.0"
+description = "AI-Powered Funding Intelligence for ISSR — FOA Ingestion, Semantic Tagging & Discovery"
+requires-python = ">=3.9"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Pratik Ramchandra Pawar", email = "pratikpawar1565@gmail.com"},
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+# Network tests are deselected by default so the suite stays fast and passes
+# offline; they assert that third-party APIs still return the shape this code
+# depends on. Run them deliberately with `pytest -m network`, which overrides
+# the marker expression below.
+addopts = "-v --tb=short -m 'not network'"
+markers = [
+    "network: hits a live third-party API (deselected by default)",
+]
+
+[tool.ruff]
+line-length = 100
+# Matches the interpreter the project is actually developed and tested on.
+# Targeting a newer version makes ruff suggest PEP 604/585 annotation syntax
+# (`X | None`, `dict[str, int]`) that raises at runtime on 3.9.
+target-version = "py39"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP"]
+ignore = [
+    # PEP 585 builtin generics (dict[str, int] over typing.Dict). ruff treats
+    # this rewrite as an unsafe fix while targeting py39, so the codebase uses
+    # typing.* consistently instead of half-migrating. Drop these ignores if
+    # the project moves to 3.10+.
+    "UP006",
+    "UP035",
+]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
