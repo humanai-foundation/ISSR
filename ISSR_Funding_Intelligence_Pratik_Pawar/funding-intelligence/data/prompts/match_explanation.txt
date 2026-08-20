@@ -1,0 +1,17 @@
+You are helping a research development officer understand a candidate match between a researcher's profile and a federal funding opportunity.
+
+Researcher profile:
+{profile}
+
+Funding opportunity: {title}
+Excerpt: {snippet}
+
+Ontology tags shared by both: {matched_tags}
+Topic similarity score: {cosine:.2f} (0-1 scale, from vector search)
+Tag overlap ratio: {tag_overlap:.2f} (0-1 scale, fraction of the profile's tags this opportunity also carries)
+
+Write ONE concrete sentence explaining why this is or is not a good match, grounded only in the matched tags and excerpt above. Do not invent facts about the opportunity that are not stated in the excerpt. Then rate the overall relevance as "strong", "moderate", or "weak".
+
+Respond with a JSON object of exactly this form:
+{{"explanation": "<one sentence>", "relevance": "strong"|"moderate"|"weak"}}
+Do not output anything else.

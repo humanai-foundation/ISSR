@@ -1,0 +1,18 @@
+concept_id,label,category,parent_id,description
+sdg_01,No Poverty,research_domain,,End poverty in all its forms everywhere including economic inclusion and social protection
+sdg_02,Zero Hunger,research_domain,,End hunger achieve food security and improved nutrition and promote sustainable agriculture
+sdg_03,Good Health and Well-being,research_domain,,Ensure healthy lives and promote well-being for all at all ages including disease prevention
+sdg_04,Quality Education,research_domain,,Ensure inclusive and equitable quality education and promote lifelong learning opportunities
+sdg_05,Gender Equality,research_domain,,Achieve gender equality and empower all women and girls including ending discrimination
+sdg_06,Clean Water and Sanitation,research_domain,,Ensure availability and sustainable management of water and sanitation for all
+sdg_07,Affordable and Clean Energy,research_domain,,Ensure access to affordable reliable sustainable and modern energy for all
+sdg_08,Decent Work and Economic Growth,research_domain,,Promote sustained inclusive and sustainable economic growth and decent work for all
+sdg_09,Industry Innovation and Infrastructure,research_domain,,Build resilient infrastructure promote inclusive and sustainable industrialization and foster innovation
+sdg_10,Reduced Inequalities,research_domain,,Reduce inequality within and among countries including income and social disparities
+sdg_11,Sustainable Cities and Communities,research_domain,,Make cities and human settlements inclusive safe resilient and sustainable
+sdg_12,Responsible Consumption and Production,research_domain,,Ensure sustainable consumption and production patterns and resource efficiency
+sdg_13,Climate Action,research_domain,,Take urgent action to combat climate change and its impacts through mitigation and adaptation
+sdg_14,Life Below Water,research_domain,,Conserve and sustainably use the oceans seas and marine resources for sustainable development
+sdg_15,Life on Land,research_domain,,Protect restore and promote sustainable use of terrestrial ecosystems and halt biodiversity loss
+sdg_16,Peace Justice and Strong Institutions,research_domain,,Promote peaceful and inclusive societies provide access to justice and build accountable institutions
+sdg_17,Partnerships for the Goals,research_domain,,Strengthen the means of implementation and revitalize the global partnership for sustainable development

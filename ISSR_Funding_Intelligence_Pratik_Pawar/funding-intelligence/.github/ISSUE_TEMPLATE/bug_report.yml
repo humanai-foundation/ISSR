@@ -1,0 +1,71 @@
+name: Bug report
+description: Something is broken or behaving unexpectedly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. If this is a security issue, please follow
+        [SECURITY.md](../../SECURITY.md) instead of filing a public issue.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: The exact commands you ran, ideally starting from a clean database.
+      placeholder: |
+        1. PYTHONPATH=src python -m foa_pipeline.cli tag-all
+        2. ...
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Output or traceback
+      description: Paste the full error. A silent exit with no traceback is worth mentioning explicitly.
+      render: shell
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the pipeline?
+      options:
+        - ingestion (Grants.gov / NSF / PDF download)
+        - parsing (PDF or LLM extraction)
+        - normalisation / validation
+        - ontology / synonyms
+        - tagging (L1 / L2 / L3)
+        - matching / vector search
+        - storage / database
+        - evaluation
+        - API or frontend
+        - CLI
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: python-version
+    attributes:
+      label: Python version
+      placeholder: "3.9.6 (output of python --version)"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: optional-deps
+    attributes:
+      label: Optional dependencies in use
+      options:
+        - label: Ollama running (Layer 3 LLM disambiguation active)
+        - label: Playwright browsers installed (NSF scraping)

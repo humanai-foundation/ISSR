@@ -1,0 +1,31 @@
+concept_id,label,category,parent_id,description,synonyms
+oa_domain_1,Life Sciences,openalex_field,,,
+oa_domain_2,Social Sciences,openalex_field,,,
+oa_domain_3,Physical Sciences,openalex_field,,,
+oa_domain_4,Health Sciences,openalex_field,,,
+oa_field_11,Agricultural and Biological Sciences,openalex_field,oa_domain_1,"study of plant and animal biology for food, fuel, fiber, and reclamation, including environmental and economic impacts",scientific agriculture|agrobiology
+oa_field_12,Arts and Humanities,openalex_field,oa_domain_2,"examination of human culture, including art, literature, philosophy, history, and artifacts",humanities
+oa_field_13,"Biochemistry, Genetics and Molecular Biology",openalex_field,oa_domain_1,study of chemical processes in living organisms,biological chemistry|genomics|molecular biology
+oa_field_14,"Business, Management and Accounting",openalex_field,oa_domain_2,administration of a commercial enterprise,business management|business administration|corporate studies
+oa_field_15,Chemical Engineering,openalex_field,oa_domain_3,"branch of science that applies physical sciences and life sciences together with applied mathematics and economics to produce, transform, transport, and properly use chemicals, materials and energy",process engineering|chemical process engineering
+oa_field_16,Chemistry,openalex_field,oa_domain_3,"branch of physical science concerned with the composition, structure and properties of matter",chemical sciences
+oa_field_17,Computer Science,openalex_field,oa_domain_3,study of computation,CS|science of computing|information processing science|computing sciences|sciences of computing|computation science|computing|computer studies|comp sci|comp. sci|comp. sci.|compsci|informatics
+oa_field_18,Decision Sciences,openalex_field,oa_domain_2,branch of applied probability theory,decision theory|theory of choice|operations research
+oa_field_19,Earth and Planetary Sciences,openalex_field,oa_domain_3,all fields of natural science related to the planet Earth and other planets,geosciences|planetary sciences
+oa_field_20,"Economics, Econometrics and Finance",openalex_field,oa_domain_2,"social science that studies the production, distribution, and consumption of goods and services",applied economics|financial economics
+oa_field_21,Energy,openalex_field,oa_domain_3,"study of energy in physical systems, its sources, technology, management, and impact on sustainability",energy studies|energy science and technology
+oa_field_22,Engineering,openalex_field,oa_domain_3,"practice of using natural science, mathematics, and the engineering design process to solve technical problems",engineering sciences
+oa_field_23,Environmental Science,openalex_field,oa_domain_3,interdisciplinary field that studies human interaction with the environment,green science|environmental studies|environmental and ecological sciences
+oa_field_24,Immunology and Microbiology,openalex_field,oa_domain_1,"study of the immune system and microorganisms, including their roles in health and disease",allergy and immunology|microbial sciences
+oa_field_25,Materials Science,openalex_field,oa_domain_3,"research, discovery and design of physical materials (especially solids)",materials science and engineering|materials of engineering and construction|material engineering
+oa_field_26,Mathematics,openalex_field,oa_domain_3,"area of knowledge that includes the topics of numbers, formulas and related structures, shapes and the spaces in which they are contained, and quantities and their changes",
+oa_field_27,Medicine,openalex_field,oa_domain_4,"field of study for diagnosing, treating and preventing disease",healthcare sciences
+oa_field_28,Neuroscience,openalex_field,oa_domain_1,scientific study of the nervous system,neurobiology|cognitive neuroscience
+oa_field_29,Nursing,openalex_field,oa_domain_4,caring for people who are sick or injured,
+oa_field_30,"Pharmacology, Toxicology and Pharmaceutics",openalex_field,oa_domain_1,branch of biology concerning drugs,therapeutics|pharmaceutical sciences
+oa_field_31,Physics and Astronomy,openalex_field,oa_domain_3,"study of matter and its motion, along with related concepts such as energy and force",general physics|physical science|astrophysics
+oa_field_32,Psychology,openalex_field,oa_domain_2,study of mental functions and behaviours,
+oa_field_33,Social Sciences,openalex_field,oa_domain_2,academic disciplines concerned with society and the relationships between individuals in society,political sciences|sociology|anthropology
+oa_field_34,Veterinary,openalex_field,oa_domain_4,"branch of medicine that deals with the prevention, management, diagnosis, and treatment of disease, disorder, and injury in non-human animals",veterinary science|veterinary medicine
+oa_field_35,Dentistry,openalex_field,oa_domain_4,branch of medicine dealing with oral health and teeth,dental medicine|oral medicine|oral health sciences
+oa_field_36,Health Professions,openalex_field,oa_domain_4,"field encompassing a wide range of disciplines focused on health care, treatment, and advice, including public health and occupational therapy",health sciences

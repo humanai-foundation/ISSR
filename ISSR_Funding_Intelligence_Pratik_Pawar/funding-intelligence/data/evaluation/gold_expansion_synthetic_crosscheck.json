@@ -1,0 +1,779 @@
+[
+  {
+    "foa_id": "fc26e105-5735-4841-a25f-d002ca3e4e8d",
+    "title": "Foundational Research in Robotics",
+    "synthetic_tags": [
+      "method_02",
+      "method_04",
+      "method_13",
+      "method_17",
+      "pop_16",
+      "sdg_08",
+      "sdg_09",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "59933d5a-c9c6-4af5-b4a4-71ff30a32737",
+    "title": "Circuits and Systems for Communications and Sensing (CSCS)",
+    "synthetic_tags": [
+      "method_01",
+      "method_13",
+      "method_20",
+      "method_22",
+      "pop_04",
+      "pop_12",
+      "pop_13",
+      "sdg_03",
+      "sdg_08",
+      "sdg_10",
+      "sdg_11",
+      "sdg_16",
+      "sdg_17",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "1cd42e40-0472-4f1a-b853-651824bc46c1",
+    "title": "Small Business Innovation Research / Small Business Technology Transfer Phase I, Phase II, Fast-Track Programs SBIR/STTR: Developing Deep Technologies that Advance U.S. Competitiveness and Security",
+    "synthetic_tags": [
+      "method_02",
+      "method_17",
+      "method_20",
+      "pop_19",
+      "nsf_tip",
+      "sdg_08",
+      "sdg_17",
+      "great_04",
+      "great_05",
+      "great_08",
+      "great_11"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "150c3b26-f85b-43b0-8398-e02c2312c7eb",
+    "title": "Catalysis",
+    "synthetic_tags": [
+      "method_04",
+      "method_12",
+      "method_13",
+      "method_17",
+      "method_18",
+      "method_22",
+      "nsf_mps",
+      "nsf_cise",
+      "sdg_07",
+      "sdg_11",
+      "sdg_12",
+      "sdg_13",
+      "great_04"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "d4a1f68a-0eed-4b9e-8fcf-eec0a568e7de",
+    "title": "Sociology",
+    "synthetic_tags": [
+      "method_06",
+      "method_07",
+      "method_08",
+      "method_15",
+      "method_16",
+      "pop_08",
+      "pop_13",
+      "nsf_sbe",
+      "sdg_04",
+      "sdg_13",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "5d49d916-221b-4a83-bc69-274c33621b0c",
+    "title": "Centers of Research Excellence in Science and Technology - Research Infrastructure for Science and Engineering",
+    "synthetic_tags": [
+      "method_17",
+      "pop_08",
+      "pop_12",
+      "pop_19",
+      "nsf_tip",
+      "sdg_04",
+      "sdg_10",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "052dbdbf-7b76-45c5-b2ec-71d14733b8d6",
+    "title": "NSF's Eddie Bernice Johnson Inclusion across the Nation of Communities of Learners of Underrepresented Discoverers in Engineering and Science (INCLUDES) Initiative",
+    "synthetic_tags": [
+      "pop_01",
+      "pop_02",
+      "pop_19",
+      "nsf_edu",
+      "sdg_04",
+      "sdg_10",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "a6c4bfa8-fa67-4d10-8de4-472e1f25d220",
+    "title": "Robert Noyce Teacher Scholarship Program",
+    "synthetic_tags": [
+      "method_05",
+      "method_14",
+      "method_24",
+      "method_25",
+      "method_16",
+      "pop_12",
+      "nsf_edu",
+      "sdg_04",
+      "sdg_08",
+      "great_09"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "6fd2fb9a-fec4-4fdd-b4ba-837f8a7eb8a0",
+    "title": "Unleashing Tribal Energy Development",
+    "synthetic_tags": [
+      "method_04",
+      "pop_20",
+      "nsf_eng",
+      "nsf_tip",
+      "sdg_08",
+      "sdg_09",
+      "sdg_11",
+      "great_04"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "6e2262d5-8596-4fdf-b8f0-e6e426395319",
+    "title": "Engineering for Civil Infrastructure",
+    "synthetic_tags": [
+      "method_11",
+      "method_12",
+      "method_13",
+      "method_14",
+      "method_18",
+      "method_24",
+      "pop_01",
+      "pop_02",
+      "pop_19",
+      "sdg_11",
+      "sdg_13",
+      "great_06",
+      "great_04",
+      "great_09",
+      "great_13"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "2b26ca51-7268-4e56-95d9-5de05d8aac42",
+    "title": "Cognitive Neuroscience",
+    "synthetic_tags": [
+      "method_02",
+      "method_04",
+      "method_09",
+      "method_11",
+      "method_12",
+      "method_13",
+      "method_17",
+      "method_18",
+      "method_22",
+      "pop_03",
+      "pop_12",
+      "nsf_mps",
+      "sdg_04",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "f4a9e9f4-ba18-411c-a2ac-d99449d96f9f",
+    "title": "Electrochemical Systems",
+    "synthetic_tags": [
+      "method_04",
+      "method_13",
+      "method_18",
+      "method_20",
+      "method_22",
+      "pop_19",
+      "nsf_mps",
+      "nsf_eng",
+      "sdg_07",
+      "sdg_11",
+      "sdg_13",
+      "great_04"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "28dd695e-853a-492e-aa20-0eb388519ff0",
+    "title": "NSF Dynamic Language Infrastructure - NEH Documenting Endangered Languages",
+    "synthetic_tags": [
+      "method_01",
+      "method_03",
+      "method_11",
+      "method_17",
+      "pop_07",
+      "pop_20",
+      "nsf_cise",
+      "sdg_04",
+      "sdg_17",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "662f4450-bb2e-48e7-84ae-41103516a1dd",
+    "title": "EPSCoR Research Infrastructure Improvement Program: Focused EPSCoR Collaborations Program (FEC)",
+    "synthetic_tags": [
+      "method_05",
+      "method_23",
+      "pop_01",
+      "pop_02",
+      "pop_20",
+      "nsf_cise",
+      "nsf_edu",
+      "sdg_08",
+      "sdg_09",
+      "sdg_16",
+      "sdg_17",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "b24f1220-a15b-4056-bf94-28aeed4eea65",
+    "title": "Electronic, Photonic, Magnetic, and Quantum Devices (EPMQD)",
+    "synthetic_tags": [
+      "method_01",
+      "method_11",
+      "method_12",
+      "method_13",
+      "method_14",
+      "method_17",
+      "method_18",
+      "method_22",
+      "pop_01",
+      "pop_02",
+      "pop_16",
+      "pop_17",
+      "pop_18",
+      "pop_19",
+      "sdg_08",
+      "sdg_09",
+      "sdg_11",
+      "sdg_12",
+      "sdg_13",
+      "sdg_17",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "42c60457-3c29-477e-8530-0a47ff782c64",
+    "title": "Infrastructure Innovation for Biological Research",
+    "synthetic_tags": [
+      "pop_01",
+      "pop_02",
+      "pop_19",
+      "nsf_bio",
+      "sdg_08",
+      "sdg_09",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "b4a823b7-0ee7-429b-937b-52cf569e09ba",
+    "title": "A Science of Science Approach to Analyzing and Innovating the Biomedical Research Enterprise",
+    "synthetic_tags": [
+      "method_05",
+      "method_15",
+      "method_21",
+      "method_23",
+      "pop_08",
+      "pop_13",
+      "pop_19",
+      "nsf_sbe",
+      "sdg_08",
+      "sdg_17",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "facd39aa-a0de-4980-bd40-a35ab68f8811",
+    "title": "Correctness for Scientific Computing Systems",
+    "synthetic_tags": [
+      "method_12",
+      "method_22",
+      "pop_01",
+      "pop_02",
+      "pop_19",
+      "nsf_cise",
+      "nsf_mps",
+      "nsf_tip",
+      "sdg_08",
+      "sdg_11",
+      "sdg_16",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "b4a0ea87-6c52-47be-909d-3a3fd3c29764",
+    "title": "Findable Accessible Interoperable Reusable Open Science",
+    "synthetic_tags": [
+      "method_11",
+      "method_12",
+      "method_17",
+      "method_18",
+      "pop_01",
+      "pop_02",
+      "pop_20",
+      "nsf_cise",
+      "nsf_mps",
+      "sdg_04",
+      "sdg_08",
+      "sdg_09",
+      "sdg_11",
+      "sdg_12",
+      "sdg_17",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "160c5a72-dfcd-4061-995e-a05e1d239145",
+    "title": "Division of Chemistry: Disciplinary Research Programs: No Deadline Pilot",
+    "synthetic_tags": [
+      "pop_01",
+      "pop_02",
+      "pop_19",
+      "nsf_mps",
+      "nsf_cise",
+      "sdg_08",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "5572c2ab-ea3f-4431-9dfd-2148ab92d079",
+    "title": "The Division of Earth Sciences Realigns the Disciplinary Research Funding Program Portfolio with Four New Programs",
+    "synthetic_tags": [
+      "method_04",
+      "nsf_geo",
+      "sdg_06",
+      "sdg_12",
+      "sdg_14",
+      "great_06"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "84b6992a-cf10-4238-ba26-680574f61c05",
+    "title": "Developing novel theory and methods for understanding the genetic architecture of complex human traits (R21 Clinical Trial Not Allowed)",
+    "synthetic_tags": [
+      "method_12",
+      "method_13",
+      "method_17",
+      "method_18",
+      "method_19",
+      "pop_01",
+      "pop_02",
+      "pop_20",
+      "nsf_mps",
+      "sdg_03",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "d4079dde-c5ec-44bd-a285-feeaa61d5b14",
+    "title": "Limited Competition: International epidemiology Databases to Evaluate AIDS (IeDEA) (U01 Clinical Trial Not Allowed)",
+    "synthetic_tags": [
+      "method_03",
+      "method_11",
+      "method_14",
+      "method_17",
+      "method_22",
+      "pop_04",
+      "pop_17",
+      "pop_20",
+      "nsf_mps",
+      "sdg_03",
+      "great_02"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "b31deed0-c999-43a4-919b-d3ba4198ab77",
+    "title": "Accelerating the Pace of Substance Use Research Using Existing Data (R21 Clinical Trial Not Allowed)",
+    "synthetic_tags": [
+      "method_03",
+      "method_11",
+      "method_12",
+      "method_17",
+      "method_18",
+      "pop_03",
+      "pop_12",
+      "pop_18",
+      "pop_20",
+      "nsf_sbe",
+      "sdg_03",
+      "sdg_10",
+      "sdg_16",
+      "great_02"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "4f0993e2-337a-4201-8d43-2732bee5e46a",
+    "title": "Emergency Competitive Revision to Existing NIH Awards (Emergency Supplement - Clinical Trial Optional)",
+    "synthetic_tags": [
+      "pop_08",
+      "pop_20",
+      "nsf_cise",
+      "sdg_13",
+      "great_02"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "8fcce4bb-732f-4bc4-8024-09202b0e1d42",
+    "title": "Stroke Preclinical Assessment Network (SPAN) to Support Translational Studies for Acute Cerebroprotection \u2013 Network Sites and Coordinating Center (U01- CT Not Allowed)",
+    "synthetic_tags": [
+      "method_04",
+      "nsf_mps",
+      "sdg_03",
+      "great_02"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "aaddfd8c-1c4a-4491-bbd4-ebbae60dd440",
+    "title": "Assay Validation of High Quality Markers for Clinical Studies in Cancer (UH3 Clinical Trials Not Allowed)",
+    "synthetic_tags": [
+      "method_04",
+      "method_05",
+      "method_11",
+      "method_12",
+      "method_14",
+      "method_16",
+      "method_17",
+      "method_18",
+      "method_22",
+      "pop_03",
+      "pop_12",
+      "pop_20",
+      "nsf_mps",
+      "nsf_cise",
+      "sdg_03",
+      "great_02"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "e7677857-5d05-457f-9ad0-76eb030c9931",
+    "title": "DoW Traumatic Brain Injury and Psychological Health, Health Services Research Award",
+    "synthetic_tags": [
+      "method_05",
+      "method_09",
+      "method_20",
+      "method_17",
+      "pop_12",
+      "nsf_mps",
+      "sdg_03",
+      "great_02"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "64066092-3cea-4f17-aa66-87de55c89688",
+    "title": "DoW Melanoma Research Program Focused Program Award \u2013 Rare Melanomas",
+    "synthetic_tags": [
+      "method_02",
+      "method_20",
+      "pop_08",
+      "pop_16",
+      "nsf_mps",
+      "sdg_03",
+      "great_02"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "c6321146-1cc3-4a91-b3d8-8fa86624d4e9",
+    "title": "Federal and University Partnership to Improve the Safety of Seafood from the Gulf of America",
+    "synthetic_tags": [
+      "method_04",
+      "pop_16",
+      "nsf_mps",
+      "nsf_geo",
+      "sdg_14",
+      "great_06"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "b3df7aad-4bfc-4dd1-9fe0-fd4264e9a4a6",
+    "title": "Identification of Drug-related and Formulation-Related Factors that Result in Alcohol Dose Dumping of Modified Release Oral Drug Products (U01) Clinical Trial Not Allowed",
+    "synthetic_tags": [
+      "method_11",
+      "method_12",
+      "method_18",
+      "nsf_mps",
+      "sdg_08",
+      "great_02"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "3d11007c-508d-4beb-b192-b3ff8fc3d67d",
+    "title": "Preventing Suicide and Interpersonal Violence Among Youth and Young Adults",
+    "synthetic_tags": [
+      "method_03",
+      "method_18",
+      "pop_04",
+      "pop_12",
+      "pop_19",
+      "nsf_mps",
+      "sdg_03",
+      "sdg_16",
+      "great_05"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "c0143692-35ff-4153-b0c3-e85df5ab6b67",
+    "title": "Infant-Toddler Court Program\u2013State Awards",
+    "synthetic_tags": [
+      "method_08",
+      "method_09",
+      "method_23",
+      "pop_04",
+      "nsf_edu",
+      "sdg_04",
+      "sdg_16",
+      "great_09"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "b9e9e8b6-a7c0-48d1-bbdc-eb6568e4f597",
+    "title": "Fiscal Year (FY) Service Area Competition (SAC)",
+    "synthetic_tags": [
+      "pop_03",
+      "pop_12",
+      "pop_14",
+      "pop_18",
+      "pop_19",
+      "sdg_03",
+      "great_02"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "a359d09c-7ea4-4e81-9809-904cd5084982",
+    "title": "Global Documentation for Accountability Initiative",
+    "synthetic_tags": [
+      "method_06",
+      "pop_08",
+      "nsf_cise",
+      "sdg_16",
+      "great_10"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "8c99566c-3e0f-4f63-8840-4c35c7526b23",
+    "title": "F24AS00298 Cooperative Agriculture",
+    "synthetic_tags": [
+      "pop_19",
+      "nsf_cise",
+      "sdg_11",
+      "great_07"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "b666fbf8-3998-42ee-a1e4-c20d53d9299d",
+    "title": "Agriculture and Food Research Initiative Competitive Grants Program Education and Workforce Development",
+    "synthetic_tags": [
+      "method_06",
+      "pop_12",
+      "nsf_edu",
+      "sdg_04",
+      "sdg_08",
+      "great_07"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "d465a6a3-8fb4-495c-815e-982c48296c63",
+    "title": "GPD Grant Forecast",
+    "synthetic_tags": [
+      "method_05",
+      "pop_06",
+      "nsf_edu",
+      "sdg_08",
+      "great_12"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "4d0f8fb3-25ba-4819-9785-1a0c546cd609",
+    "title": "ROSES 2025: A.4 Rapid Response and Novel Research in Earth Science",
+    "synthetic_tags": [
+      "method_18",
+      "pop_01",
+      "pop_02",
+      "nsf_geo",
+      "sdg_07",
+      "great_06"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  },
+  {
+    "foa_id": "32d2256c-a00e-48aa-a022-ee00023a01b2",
+    "title": "BJA FY26 Body-Worn Camera Policy and Implementation Program to Support Law Enforcement Agencies",
+    "synthetic_tags": [
+      "method_04",
+      "pop_18",
+      "nsf_cise",
+      "sdg_08",
+      "sdg_11",
+      "great_08"
+    ],
+    "annotation_provenance": {
+      "model": "mistral:7b-instruct",
+      "source": "synthetic_crosscheck"
+    }
+  }
+]

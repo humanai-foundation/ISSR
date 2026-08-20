@@ -1,0 +1,24 @@
+# NSF solicitation page scraping rules
+domain: nsf.gov
+base_url: https://www.nsf.gov
+
+selectors:
+  title_selector: "h1.page-title, h1.program-page-title, h1"
+  description_selector: "div.program-description, div#programdesc, div.field--name-body"
+  dates_selector: "div.key-dates, table.dates-table, div.field--name-field-key-dates"
+  eligibility_selector: "div.eligibility, div#eligibility, div.field--name-field-eligibility"
+  pdf_link_selector: "a[href$='.pdf'], a.document-link, a[href*='publications']"
+  award_selector: "div.award-info, span.award-amount, div.field--name-field-award-info"
+
+rate_limit:
+  requests_per_second: 1
+  delay_between_pages_ms: 2000
+
+headers:
+  User-Agent: "ISSR-FundingIntelligence/1.0 (research; +https://issr.ua.edu)"
+
+# Patterns for identifying NSF-specific data
+patterns:
+  solicitation_number: 'NSF\s+\d{2}-\d{3}'
+  program_element_code: '\d{4}'
+  due_date: '\w+\s+\d{1,2},\s+\d{4}'
