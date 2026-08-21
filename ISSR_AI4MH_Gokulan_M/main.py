@@ -14,11 +14,15 @@ tqdm.pandas()
 import warnings
 warnings.filterwarnings('ignore')
 
+from dash_app import create_dashboard
+
 
 app= Flask(__name__)
 db_path=os.path.join(os.path.abspath(os.path.dirname(__file__)),'posts.db')
 app.config['SQLALCHEMY_DATABASE_URI']= 'sqlite:///' + db_path  
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+dashboard=create_dashboard(app)
 
 db = SQLAlchemy(app)
 
