@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrisisWatch AI</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>CrisisWatch AI</h1>
+
+    <p>
+        Click the button below to start the Reddit data collection,
+        preprocessing, risk classification, sentiment analysis,
+        geolocation extraction, and database storage pipeline.
+    </p>
+
+    <button onclick="startAnalysis()">
+        Start Analysis
+    </button>
+
+    <p id="status"></p>
+
+</div>
+
+<script>
+
+async function startAnalysis(){
+
+    document.getElementById("status").innerHTML =
+        "Running analysis... Please wait.";
+
+    const response = await fetch("/analyze/");
+
+    const data = await response.json();
+
+    document.getElementById("status").innerHTML =
+        data.message + "<br>Total Posts: " + data.rows;
+}
+
+</script>
+
+</body>
+</html>
