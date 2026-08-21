@@ -1,6 +1,8 @@
 # AI for Mental Health: Bias-Aware Crisis Signal Detection and Confidence-Based Scoring System
 
 > **Google Summer of Code (GSoC) 2026 Project** under **HumanAI**
+> <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/e5fe41c8-e1ba-4d10-9bea-7e44297e6f7e" />
+
 
 An AI-powered backend pipeline for monitoring behavioral health discussions on Reddit. The system automatically collects Reddit posts, classifies mental health risk, performs sentiment analysis, extracts user locations using a hybrid NLP pipeline, generates behavioral insights, and stores structured outputs for downstream visualization and geospatial analysis.
 
