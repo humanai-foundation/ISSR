@@ -30,7 +30,7 @@ This project aims to develop an AI-powered backend pipeline that automatically p
 
 # System Architecture
 
- <img width="1070" height="630" alt="Screenshot 2026-07-03 223243" src="https://github.com/user-attachments/assets/2a50597b-9a35-4b4a-89b8-877205b61369" />
+ <img width="1637" height="961" alt="ChatGPT Image Aug 21, 2026, 02_47_02 PM" src="https://github.com/user-attachments/assets/da4461b8-fbdb-4c27-bde7-d8238b9d92b2" />
 
 
 ---
@@ -193,7 +193,7 @@ The backend generates multiple visualizations, including:
 | User Behavior Analysis | ✅ Completed |
 | SQLite Database | ✅ Completed |
 | Data Visualization | ✅ Completed |
-| Dashboard Development | 🚧 In Progress |
+| Dashboard Development | ✅ Completed |
 | Confidence-Based Scoring | ⏳ Planned |
 | Bias-Aware Analysis | ⏳ Planned |
 
