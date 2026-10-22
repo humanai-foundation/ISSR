@@ -1,2 +1,31 @@
-
 /ISSR_Dark_Web_Domenico_Lacavalla/BackupPresentation
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.venv*/
+venv*/
+
+# IDE and development tooling
+.gemini/
+.idea/
+.vscode/
+.cursor/
+*.swp
+*.swo
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Checkpoints and large local cache
+results/checkpoint-*/
+*.log
+*.tmp

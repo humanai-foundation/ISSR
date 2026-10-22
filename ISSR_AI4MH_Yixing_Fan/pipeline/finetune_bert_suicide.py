@@ -36,29 +36,40 @@ val_dataset.set_format(type="torch", columns=["input_ids", "attention_mask", "la
 model = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=2)
 
 # 6. set training parameters
-training_args = TrainingArguments(
-    output_dir="./results",
-    evaluation_strategy="epoch",
-    save_strategy="epoch",  # 改为每个epoch保存
-    save_total_limit=2,     # 最多保存2个checkpoint
-    learning_rate=2e-5,
-    per_device_train_batch_size=8,
-    per_device_eval_batch_size=8,
-    num_train_epochs=1,
-    max_steps=500,
-    weight_decay=0.01,
-    logging_dir="./logs",
-    logging_steps=10,
-)
+import inspect
+training_args_kwargs = {
+    "output_dir": "./results",
+    "save_strategy": "epoch",
+    "save_total_limit": 2,
+    "learning_rate": 2e-5,
+    "per_device_train_batch_size": 8,
+    "per_device_eval_batch_size": 8,
+    "num_train_epochs": 1,
+    "max_steps": 500,
+    "weight_decay": 0.01,
+    "logging_dir": "./logs",
+    "logging_steps": 10,
+}
+if "eval_strategy" in inspect.signature(TrainingArguments.__init__).parameters:
+    training_args_kwargs["eval_strategy"] = "epoch"
+else:
+    training_args_kwargs["evaluation_strategy"] = "epoch"
+
+training_args = TrainingArguments(**training_args_kwargs)
 
 # 7. use Trainer API to start training
-trainer = Trainer(
-    model=model,
-    args=training_args,
-    train_dataset=train_dataset,
-    eval_dataset=val_dataset,
-    tokenizer=tokenizer,
-)
+trainer_kwargs = {
+    "model": model,
+    "args": training_args,
+    "train_dataset": train_dataset,
+    "eval_dataset": val_dataset,
+}
+if "processing_class" in inspect.signature(Trainer.__init__).parameters:
+    trainer_kwargs["processing_class"] = tokenizer
+else:
+    trainer_kwargs["tokenizer"] = tokenizer
+
+trainer = Trainer(**trainer_kwargs)
 
 # 7. use Trainer API to start training
 trainer.train()

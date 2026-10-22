@@ -1,6 +1,10 @@
+import os
 import pandas as pd
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.makedirs(os.path.join(BASE_DIR, "output"), exist_ok=True)
 
 # 📦 Download VADER model if not already downloaded
 try:
@@ -10,7 +14,8 @@ except LookupError:
 
 # Step 1: Load filtered Reddit data
 print("📥 Loading preprocessed Reddit posts...")
-df = pd.read_csv("output/filtered_reddit_posts.csv")
+input_csv = os.path.join(BASE_DIR, "output", "filtered_reddit_posts.csv")
+df = pd.read_csv(input_csv)
 
 # Use the correct column that contains Reddit post content
 text_col = "cleaned_text"
@@ -58,6 +63,6 @@ def classify_risk(text):
 df['risk_level'] = df[text_col].astype(str).apply(classify_risk)
 
 # Step 4: Export results
-output_path = "output/sentiment_risk_classified.csv"
+output_path = os.path.join(BASE_DIR, "output", "sentiment_risk_classified.csv")
 df.to_csv(output_path, index=False)
 print(f"✅ Classification complete. File saved to: {output_path}")
