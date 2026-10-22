@@ -35,10 +35,11 @@ wc.generate_from_frequencies(word_freq)
 
 # ===== Save word cloud =====
 wc.to_file(OUTPUT_IMG_PATH)
-
-# ===== Display word cloud =====
-plt.imshow(wc, interpolation="bilinear")
-plt.axis("off")
-plt.show()
-
 print(f"Word cloud saved to {OUTPUT_IMG_PATH}")
+
+# ===== Display word cloud (if GUI/interactive mode enabled) =====
+if os.environ.get("SHOW_PLOT", "").lower() in ("1", "true"):
+    plt.imshow(wc, interpolation="bilinear")
+    plt.axis("off")
+    plt.show()
+plt.close()

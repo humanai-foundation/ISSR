@@ -6,8 +6,9 @@ import contractions
 from wordcloud import STOPWORDS
 
 # ===== Path settings =====
-input_path = os.path.join("dataset", "Suicidal Ideation Detection Reddit Dataset-Version 2.csv")
-output_path = os.path.join("output", "word_bank.csv")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+input_path = os.path.join(BASE_DIR, "dataset", "Suicidal Ideation Detection Reddit Dataset-Version 2.csv")
+output_path = os.path.join(BASE_DIR, "output", "word_bank.csv")
 
 # ===== Read data =====
 df = pd.read_csv(input_path)

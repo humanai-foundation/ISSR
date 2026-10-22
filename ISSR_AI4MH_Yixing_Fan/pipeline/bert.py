@@ -1,17 +1,19 @@
+import os
 import pandas as pd
 from transformers import pipeline
 import torch
-import os
 
-# Create the output folder if it doesn't exist
-os.makedirs("output", exist_ok=True)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUTPUT_DIR = os.path.join(BASE_DIR, "output")
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Choose device: use GPU if available, otherwise use CPU
 device = 0 if torch.cuda.is_available() else -1
 print(f"Using device: {'cuda' if device == 0 else 'cpu'}")
 
-# Load the CSV file – make sure the file is in the same folder or update the path
-df = pd.read_csv("output/filtered_reddit_posts.csv")
+# Load the CSV file
+input_path = os.path.join(OUTPUT_DIR, "filtered_reddit_posts.csv")
+df = pd.read_csv(input_path)
 
 # Get the 'cleaned_text' column, drop any blank or missing values, and convert to string
 texts = df["cleaned_text"].dropna()
@@ -29,5 +31,6 @@ df_result["sentiment_label"] = [r["label"] for r in results]     # 'POSITIVE' or
 df_result["sentiment_score"] = [r["score"] for r in results]     # Confidence score
 
 # Save the result to a new CSV file
-df_result.to_csv("output/bert_sentiment_result.csv", index=False)
-print("Saved to output/bert_sentiment_result.csv ✅")
+output_csv = os.path.join(OUTPUT_DIR, "bert_sentiment_result.csv")
+df_result.to_csv(output_csv, index=False)
+print(f"Saved to {output_csv} ✅")
